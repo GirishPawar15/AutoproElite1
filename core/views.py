@@ -29,6 +29,23 @@ from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.urls import reverse
 from .email_utils import send_booking_confirmation_email
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
+import json
+
+@csrf_exempt
+def your_api(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+
+        name = data.get("name")
+
+        return JsonResponse({
+            "message": "Success",
+            "name": name
+        })
+
+    return JsonResponse({"error": "Invalid request"})
 
 # --- Chatbot: Load local pretrained model and vectorizer (if available) ---
 _CHATBOT_READY = False
