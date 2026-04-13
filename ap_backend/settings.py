@@ -16,7 +16,7 @@ if ALLOWED_HOSTS_ENV:
     ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS_ENV.split(",")]
 else:
     # Use * only if DEBUG is True, else restrict to localhost
-    ALLOWED_HOSTS = ["192.168.60.15", "localhost", "127.0.0.1", "*"] if DEBUG else ["localhost", "127.0.0.1"]
+    ALLOWED_HOSTS = ["*"] if DEBUG else ["localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
