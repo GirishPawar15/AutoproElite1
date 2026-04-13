@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/admin-analytics.css' %}">
+{% endblock %}
+
+{% block title %}Sales Analytics - Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="analytics-container">
+  <!-- Header -->
+  <div class="analytics-header">
+    <div class="header-content">
+      <h1><i class="fas fa-chart-line"></i> Sales Analytics Dashboard</h1>
+      <p class="subtitle">Real-time sales insights and performance metrics</p>
+    </div>
+    <div class="header-actions">
+      <a href="/profit-analysis/" class="btn btn-profit">
+        <i class="fas fa-chart-line"></i> Profit Analysis
+      </a>
+      <button class="btn btn-export" onclick="exportReport()">
+        <i class="fas fa-download"></i> Export Report
+      </button>
+    </div>
+  </div>
+
+  <!-- Time Period Selector -->
+  <div class="period-selector">
+    <button class="period-btn active" data-period="daily" onclick="changePeriod('daily')">
+      <i class="fas fa-calendar-day"></i> Daily
+    </button>
+    <button class="period-btn" data-period="weekly" onclick="changePeriod('weekly')">
+      <i class="fas fa-calendar-week"></i> Weekly
+    </button>
+    <button class="period-btn" data-period="monthly" onclick="changePeriod('monthly')">
+      <i class="fas fa-calendar-alt"></i> Monthly
+    </button>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <i class="fas fa-rupee-sign"></i>
+      </div>
+      <div class="stat-content">
+        <h3 id="totalRevenue">₹0</h3>
+        <p>Total Revenue</p>
+        <span class="stat-change positive" id="revenueChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="stat-content">
+        <h3 id="totalOrders">0</h3>
+        <p>Total Orders</p>
+        <span class="stat-change positive" id="ordersChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        <i class="fas fa-box"></i>
+      </div>
+      <div class="stat-content">
+        <h3 id="totalItems">0</h3>
+        <p>Items Sold</p>
+        <span class="stat-change positive" id="itemsChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <div class="stat-content">
+        <h3 id="avgOrder">₹0</h3>
+        <p>Average Order</p>
+        <span class="stat-change positive" id="avgChange">+0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Row 1 -->
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-chart-line"></i> Sales Trend</h3>
+        <div class="chart-actions">
+          <button class="chart-btn" onclick="refreshChart('salesTrend')">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        </div>
+      </div>
+      <div class="chart-body">
+        <canvas id="salesTrendChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-chart-pie"></i> Sales Distribution</h3>
+        <div class="chart-actions">
+          <button class="chart-btn" onclick="refreshChart('salesDist')">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        </div>
+      </div>
+      <div class="chart-body">
+        <canvas id="salesDistChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Row 2 -->
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-trophy"></i> Top Selling Products</h3>
+      </div>
+      <div class="chart-body">
+        <canvas id="topProductsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-chart-area"></i> Revenue vs Orders</h3>
+      </div>
+      <div class="chart-body">
+        <canvas id="revenueOrdersChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Orders Table -->
+  <div class="table-card">
+    <div class="table-header">
+      <h3><i class="fas fa-receipt"></i> Recent Orders</h3>
+      <a href="/orders/" class="btn btn-link">View All</a>
+    </div>
+    <div class="table-body">
+      <table id="recentOrdersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Bill Number</th>
+            <th>Customer</th>
+            <th>Items</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="recentOrdersBody">
+          <tr>
+            <td colspan="7" class="loading">Loading orders...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{% static 'js/admin-analytics.js' %}"></script>
+{% endblock %}

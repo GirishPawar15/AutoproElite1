@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+{% block title %}Contact Us - AutoPro Elite{% endblock %}
+
+{% block content %}
+  <header class="hero container">
+    <h1>Contact Us</h1>
+    <p>We usually reply within a few hours. Tell us how we can help.</p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <form onsubmit="event.preventDefault(); alert('Thanks! Your message has been sent.'); this.reset();">
+        <div class="row">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div class="row" style="margin-top:12px">
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" />
+          </div>
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>General</option>
+              <option>Price Estimate</option>
+              <option>Damage Assessment</option>
+              <option>Sell My Car</option>
+              <option>Support</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+        </div>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <a class="btn secondary" href="/#home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="card contact-card">
+      <div class="info"><div class="icon"><i class="fas fa-map-marker-alt"></i></div>Ring Road,paranda-413502</div>
+      <div class="info"><div class="icon"><i class="fas fa-phone"></i></div> +91 7972729804</div>
+      <div class="info"><div class="icon"><i class="fas fa-envelope"></i></div> autoproelite.info@gmail.com</div>
+      <div class="info"><div class="icon"><i class="fas fa-clock"></i></div> Mon–Sat: 10AM–8PM</div>
+      <hr style="border:none;border-top:1px solid #eef2f7"/>
+      <!-- Google Maps Embed -->
+      <div style="margin:16px 0">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.7267891234567!2d73.8567!3d18.4489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea8b0e0e0e0e%3A0x0!2sKatraj%20Bridge!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+          width="100%" 
+          height="250" 
+          style="border:0;border-radius:10px" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <p><strong>Need a quick estimate?</strong></p>
+      <a class="btn" href="/sell-car/"><i class="fas fa-dollar-sign"></i> Get Price Estimate</a>
+    </aside>
+  </main>
+
+{% block extra_js %}
+  <script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}
+{% endblock %}

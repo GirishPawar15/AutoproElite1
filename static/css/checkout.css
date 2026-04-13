@@ -1,0 +1,68 @@
+ :root { --primary:#2563eb; --primary-dark:#1e40af; --secondary:#f59e0b; --accent:#10b981; --dark:#1e293b; --light:#f8fafc; --gray:#64748b; --light-gray:#e2e8f0; --shadow:0 6px 18px rgba(0,0,0,.08); --radius:12px }
+    * { box-sizing:border-box }
+    body { margin:0; background:linear-gradient(180deg, rgba(15,23,42,0.75), rgba(15,23,42,0.75)), url('https://www.shutterstock.com/image-illustration/augmented-reality-wireframe-car-concept-260nw-2184316901.jpg') center/cover fixed; color:var(--dark); font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif; padding-top:90px }
+    
+    .container { max-width:1000px; margin:0 auto; padding:24px }
+    .checkout-container { display:grid; grid-template-columns:1fr 400px; gap:24px; align-items:start }
+    .panel { background:#fff; border-radius:16px; box-shadow:var(--shadow); padding:24px; margin-bottom:20px }
+    
+    .page-title { display:flex; align-items:center; gap:12px; margin:0 0 24px; font-size:1.8rem; color:var(--dark) }
+    .page-title i { color:var(--primary) }
+    
+    /* Payment Methods */
+    .payment-methods { display:grid; gap:12px; margin:16px 0 }
+    .payment-option { display:flex; align-items:center; gap:16px; padding:16px; border:2px solid var(--light-gray); border-radius:12px; cursor:pointer; transition:all 0.3s ease }
+    .payment-option:hover { border-color:var(--primary); background:rgba(37,99,235,0.05) }
+    .payment-option.selected { border-color:var(--primary); background:rgba(37,99,235,0.1) }
+    .payment-option input[type="radio"] { display:none }
+    .payment-icon { width:48px; height:48px; display:flex; align-items:center; justify-content:center; border-radius:8px; font-size:1.5rem }
+    .payment-icon.cod { background:#e5f6f0; color:#065f46 }
+    .payment-icon.upi { background:#fff3cd; color:#856404 }
+    .payment-icon.card { background:#e3f2fd; color:#1565c0 }
+    .payment-details h4 { margin:0 0 4px; font-size:1rem }
+    .payment-details small { color:var(--gray); font-size:0.9rem }
+    
+    /* Forms */
+    .form-group { margin-bottom:16px }
+    .form-group label { display:block; margin-bottom:6px; font-weight:600; color:var(--dark) }
+    .form-group input, .form-group textarea, .form-group select { width:100%; padding:12px; border:1px solid var(--light-gray); border-radius:8px; font-size:1rem }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(37,99,235,0.1) }
+    
+    /* Order Summary */
+    .order-summary { position:sticky; top:100px }
+    .summary-item { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--light-gray) }
+    .summary-item:last-child { border-bottom:none; font-weight:700; font-size:1.1rem }
+    .item-image { width:48px; height:48px; object-fit:cover; border-radius:6px; margin-right:12px }
+    .item-details { flex:1 }
+    .item-name { font-weight:600; margin:0 }
+    .item-meta { color:var(--gray); font-size:0.9rem; margin:0 }
+    
+    /* Buttons */
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 24px; border:none; border-radius:8px; font-weight:600; cursor:pointer; transition:all 0.3s ease; text-decoration:none }
+    .btn-primary { background:var(--primary); color:#fff }
+    .btn-primary:hover { background:var(--primary-dark); transform:translateY(-1px) }
+    .btn-secondary { background:var(--light-gray); color:var(--dark) }
+    .btn-secondary:hover { background:#cbd5e1 }
+    .btn-success { background:var(--accent); color:#fff }
+    .btn-success:hover { background:#059669 }
+    
+    /* UPI Apps */
+    .upi-apps { display:grid; grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); gap:12px; margin:16px 0 }
+    .upi-app { display:flex; flex-direction:column; align-items:center; gap:8px; padding:16px; border:2px solid var(--light-gray); border-radius:12px; cursor:pointer; transition:all 0.3s ease; text-decoration:none; color:var(--dark) }
+    .upi-app:hover { border-color:var(--primary); background:rgba(37,99,235,0.05) }
+    .upi-app img { width:32px; height:32px }
+    .upi-app span { font-size:0.9rem; font-weight:600 }
+    
+    /* Loading and Success States */
+    .loading { display:none; text-align:center; padding:20px; color:var(--gray) }
+    .success { display:none; text-align:center; padding:20px; color:var(--accent) }
+    .error { display:none; text-align:center; padding:20px; color:#dc2626; background:#fef2f2; border:1px solid #fecaca; border-radius:8px }
+    
+    /* Responsive */
+    @media(max-width:768px) {
+      body { padding-top:74px }
+      .container { padding:16px }
+      .checkout-container { grid-template-columns:1fr; gap:16px }
+      .order-summary { position:static }
+      .upi-apps { grid-template-columns:repeat(3, 1fr) }
+    }

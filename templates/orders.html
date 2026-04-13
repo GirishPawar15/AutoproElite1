@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/order.css' %}">
+{% endblock %}
+{% block title %}My Orders - AutoPro Elite{% endblock %}
+{% block content %}
+  <div class="wrap">
+    <div class="card">
+      <div class="head"><div class="title"><i class="fas fa-receipt"></i> My Orders</div></div>
+      <div class="body">
+        <div class="muted" id="msg"></div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Bill Number</th>
+                <th>Status</th>
+                <th>Type</th>
+                <th>Total</th>
+                <th>Created</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="ordersBody">
+              <tr>
+                <td colspan="7" class="muted">Loading orders...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <a href="/account/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% block extra_js %}
+  <script src="{% static 'js/order.js' %}"></script>
+{% endblock %}{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Help Center{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/help.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="support-wrap">
+  <div class="support-hero">
+    <h1>Help Center</h1>
+    <p>Find quick answers, learn how to use AutoPro Elite features, and get support for your account, listings, orders, and damage detection.</p>
+  </div>
+
+  <div class="support-grid">
+    <section class="support-card">
+      <h2>Quick help</h2>
+      <div class="support-links">
+        <a class="support-link" href="/faq/">
+          <div>
+            <strong>Frequently Asked Questions</strong>
+            <div class="support-muted">Login, shop, cart, orders, and pricing</div>
+          </div>
+          <span>View</span>
+        </a>
+        <a class="support-link" href="/warranty/">
+          <div>
+            <strong>Warranty</strong>
+            <div class="support-muted">Coverage, exclusions, and claim steps</div>
+          </div>
+          <span>View</span>
+        </a>
+        <a class="support-link" href="/contact/">
+          <div>
+            <strong>Contact Support</strong>
+            <div class="support-muted">Send a message to our team</div>
+          </div>
+          <span>Open</span>
+        </a>
+      </div>
+
+      <div class="support-actions">
+        <a class="primary" href="/shop/">Browse Cars</a>
+        <a href="/sell-car/">Sell a Car</a>
+        <a href="/spare-parts/">Spare Parts</a>
+        <a href="/damage-detection/">Damage Detection</a>
+      </div>
+    </section>
+
+    <aside class="support-card">
+      <h2>Support contacts</h2>
+      <div class="support-kv">
+        <div class="item">
+          <div><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <div>
+            <b>Email</b>
+            <div class="support-muted">autoproelite@gmail.com</div>
+          </div>
+        </div>
+        <div class="item">
+          <div><i class="fas fa-phone" aria-hidden="true"></i></div>
+          <div>
+            <b>Phone</b>
+            <div class="support-muted">+91 9850767273</div>
+          </div>
+        </div>
+        <div class="item">
+          <div><i class="fas fa-clock" aria-hidden="true"></i></div>
+          <div>
+            <b>Hours</b>
+            <div class="support-muted">Mon–Sat, 8:00 AM – 6:00 PM</div>
+          </div>
+        </div>
+        <div class="item">
+          <div><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+          <div>
+            <b>Address</b>
+            <div class="support-muted">Fule chauk, Velapur, Malshiras</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{% block extra_js %}
+  <script src="{% static 'js/help.js' %}"></script>
+{% endblock %}{% endblock %}

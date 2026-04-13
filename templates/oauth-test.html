@@ -1,0 +1,359 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google OAuth Test - AutoPro Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .test-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .status-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+        
+        .status-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .status-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        
+        .status-icon.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-icon.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status-icon.warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status-text {
+            flex: 1;
+        }
+        
+        .status-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        .status-value {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .btn-google {
+            background: white;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+        
+        .btn-google:hover {
+            background: #f8f9fa;
+            border-color: #ccc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .user-info {
+            background: #e7f3ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .user-info h3 {
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .user-detail {
+            display: flex;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .user-detail strong {
+            min-width: 100px;
+            color: #333;
+        }
+        
+        .user-detail span {
+            color: #666;
+        }
+        
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            color: #856404;
+        }
+        
+        .alert-info {
+            background: #d1ecf1;
+            border: 1px solid #17a2b8;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1><i class="fab fa-google"></i> Google OAuth Test</h1>
+        <p class="subtitle">Test your Google OAuth configuration</p>
+        
+        <div class="status-box">
+            <div class="status-item">
+                <div class="status-icon" id="clientIdStatus">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="status-text">
+                    <div class="status-label">Client ID</div>
+                    <div class="status-value" id="clientIdValue">Checking...</div>
+                </div>
+            </div>
+            
+            <div class="status-item">
+                <div class="status-icon" id="clientSecretStatus">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="status-text">
+                    <div class="status-label">Client Secret</div>
+                    <div class="status-value" id="clientSecretValue">Checking...</div>
+                </div>
+            </div>
+            
+            <div class="status-item">
+                <div class="status-icon" id="redirectUriStatus">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="status-text">
+                    <div class="status-label">Redirect URI</div>
+                    <div class="status-value" id="redirectUriValue">Checking...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="alertContainer"></div>
+        
+        <button class="btn btn-google" id="testOAuthBtn" disabled>
+            <i class="fab fa-google"></i>
+            Test Google OAuth Login
+        </button>
+        
+        <button class="btn btn-primary" onclick="window.location.href='/'">
+            <i class="fas fa-home"></i>
+            Back to Home
+        </button>
+        
+        <div id="userInfo" style="display: none;"></div>
+    </div>
+    
+    <script>
+        // Check OAuth configuration
+        async function checkConfig() {
+            try {
+                const response = await fetch('/api/auth/google/start/?test=1');
+                const isConfigured = response.status !== 500;
+                
+                if (isConfigured) {
+                    updateStatus('clientIdStatus', 'success', 'Configured');
+                    updateStatus('clientSecretStatus', 'success', 'Configured');
+                    updateStatus('redirectUriStatus', 'success', window.location.origin + '/api/auth/google/callback/');
+                    
+                    document.getElementById('testOAuthBtn').disabled = false;
+                    
+                    showAlert('info', 'Configuration looks good! Click the button above to test the OAuth flow.');
+                } else {
+                    updateStatus('clientIdStatus', 'error', 'Not configured');
+                    updateStatus('clientSecretStatus', 'error', 'Not configured');
+                    updateStatus('redirectUriStatus', 'warning', window.location.origin + '/api/auth/google/callback/');
+                    
+                    showAlert('warning', 'Google OAuth is not configured. Please follow the setup guide in GOOGLE_OAUTH_SETUP.md');
+                }
+            } catch (error) {
+                updateStatus('clientIdStatus', 'error', 'Error checking');
+                updateStatus('clientSecretStatus', 'error', 'Error checking');
+                updateStatus('redirectUriStatus', 'error', 'Error checking');
+                
+                showAlert('warning', 'Could not verify configuration. Make sure the server is running.');
+            }
+        }
+        
+        function updateStatus(elementId, status, value) {
+            const element = document.getElementById(elementId);
+            const valueElement = document.getElementById(elementId.replace('Status', 'Value'));
+            
+            element.className = 'status-icon ' + status;
+            
+            if (status === 'success') {
+                element.innerHTML = '<i class="fas fa-check"></i>';
+            } else if (status === 'error') {
+                element.innerHTML = '<i class="fas fa-times"></i>';
+            } else if (status === 'warning') {
+                element.innerHTML = '<i class="fas fa-exclamation"></i>';
+            }
+            
+            valueElement.textContent = value;
+        }
+        
+        function showAlert(type, message) {
+            const container = document.getElementById('alertContainer');
+            container.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+        }
+        
+        // Test OAuth button
+        document.getElementById('testOAuthBtn').addEventListener('click', () => {
+            window.location.href = '/api/auth/google/start/?next=/oauth-test/';
+        });
+        
+        // Check if user is logged in
+        const token = localStorage.getItem('ap_token');
+        const user = localStorage.getItem('ap_user');
+        
+        if (token && user) {
+            try {
+                const userData = JSON.parse(user);
+                const userInfoDiv = document.getElementById('userInfo');
+                userInfoDiv.style.display = 'block';
+                userInfoDiv.innerHTML = `
+                    <div class="user-info">
+                        <h3><i class="fas fa-user-check"></i> Logged In Successfully!</h3>
+                        <div class="user-detail">
+                            <strong>Username:</strong>
+                            <span>${userData.username}</span>
+                        </div>
+                        <div class="user-detail">
+                            <strong>Email:</strong>
+                            <span>${userData.email || 'Not provided'}</span>
+                        </div>
+                        <div class="user-detail">
+                            <strong>User ID:</strong>
+                            <span>${userData.id}</span>
+                        </div>
+                        <div class="code-block">Token: ${token.substring(0, 20)}...</div>
+                    </div>
+                `;
+                
+                showAlert('info', 'You are currently logged in. The OAuth flow is working correctly!');
+            } catch (e) {
+                console.error('Error parsing user data:', e);
+            }
+        }
+        
+        // Run check on page load
+        checkConfig();
+    </script>
+</body>
+</html>

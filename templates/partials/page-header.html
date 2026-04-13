@@ -1,0 +1,14 @@
+{% comment %}
+  Reusable page header component
+  Usage: {% include 'partials/page-header.html' with icon='fa-car' title='Page Title' subtitle='Page description' %}
+{% endcomment %}
+<header class="page-head">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <div class="page-title"><i class="fas {{ icon|default:'fa-circle' }}"></i> {{ title|default:'Page Title' }}</div>
+        <div class="page-sub">{{ subtitle|default:'Page description' }}</div>
+      </div>
+    </div>
+  </div>
+</header>

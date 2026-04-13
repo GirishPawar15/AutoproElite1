@@ -1,0 +1,10 @@
+  .legal-wrap{max-width:1100px;margin:0 auto;padding:28px 0 56px}
+  .legal-hero{background:linear-gradient(135deg, rgba(245,158,11,.14), rgba(37,99,235,.12));border:1px solid rgba(148,163,184,.35);border-radius:18px;padding:26px 24px}
+  .legal-hero h1{margin:0 0 6px;font-size:2rem;color:#0f172a}
+  .legal-hero p{margin:0;color:#475569;max-width:90ch}
+  .legal-card{background:#fff;border:1px solid rgba(148,163,184,.25);border-radius:16px;box-shadow:0 18px 35px rgba(2,6,23,.08);padding:18px;margin-top:14px}
+  .legal-card h2{margin:0 0 10px;font-size:1.25rem;color:#0f172a}
+  .legal-card p{margin:0 0 10px;color:#334155;line-height:1.7}
+  .legal-card ul{margin:0;padding-left:18px;color:#334155}
+  .legal-card li{margin:8px 0}
+  .legal-muted{color:#64748b;font-size:.95rem}

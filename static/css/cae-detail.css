@@ -1,0 +1,255 @@
+ const API_BASE = 'http://127.0.0.1:8000/api';
+    let currentImages = [];
+    let currentImageIndex = 0;
+    
+    // Get listing ID from URL
+    function getListingId() {
+      const path = window.location.pathname;
+      const match = path.match(/\/car\/(\d+)\//);
+      return match ? parseInt(match[1]) : null;
+    }
+    
+    // Image gallery functions
+    function setupImageGallery(images) {
+      currentImages = images || [];
+      currentImageIndex = 0;
+      
+      const mainImage = document.getElementById('main-image');
+      const imageNav = document.getElementById('image-nav');
+      const prevBtn = document.getElementById('prev-image');
+      const nextBtn = document.getElementById('next-image');
+      
+      if (currentImages.length === 0) {
+        currentImages = ['https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=800&auto=format&fit=crop'];
+      }
+      
+      // Show/hide navigation arrows
+      if (currentImages.length > 1) {
+        prevBtn.style.display = 'block';
+        nextBtn.style.display = 'block';
+      }
+      
+      // Set up dots
+      imageNav.innerHTML = '';
+      currentImages.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `image-dot ${index === 0 ? 'active' : ''}`;
+        dot.addEventListener('click', () => showImage(index));
+        imageNav.appendChild(dot);
+      });
+      
+      // Set up arrow navigation
+      prevBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+        showImage(currentImageIndex);
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+        showImage(currentImageIndex);
+      });
+      
+      // Show first image
+      showImage(0);
+    }
+    
+    function showImage(index) {
+      if (index < 0 || index >= currentImages.length) return;
+      
+      currentImageIndex = index;
+      const mainImage = document.getElementById('main-image');
+      const dots = document.querySelectorAll('.image-dot');
+      
+      // Update main image
+      mainImage.src = currentImages[index];
+      
+      // Update dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+    
+    // Load car details
+    async function loadCarDetails() {
+      const listingId = getListingId();
+      console.log('Loading car details for ID:', listingId);
+      
+      if (!listingId) {
+        console.error('Invalid listing ID');
+        showError('Invalid car listing ID');
+        return;
+      }
+      
+      try {
+        console.log('Fetching from:', `${API_BASE}/listings/${listingId}/`);
+        const response = await fetch(`${API_BASE}/listings/${listingId}/`);
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+          throw new Error('Car not found');
+        }
+        
+        const car = await response.json();
+        console.log('Car data received:', car);
+        renderCarDetails(car);
+        
+      } catch (error) {
+        console.error('Error loading car details:', error);
+        showError(error.message || 'Failed to load car details');
+      }
+    }
+    
+    function renderCarDetails(car) {
+      // Hide loading, show content
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('content').style.display = 'grid';
+      
+      // Update page title
+      document.getElementById('page-title').textContent = `${car.make} ${car.model} (${car.year}) • AutoPro Elite`;
+      document.title = `${car.make} ${car.model} (${car.year}) • AutoPro Elite`;
+      
+      // Setup image gallery with all images
+      const allImages = car.all_images || [car.img || car.primary_image];
+      setupImageGallery(allImages);
+      
+      // Car header
+      document.getElementById('car-title').textContent = `${car.make} ${car.model} (${car.year})`;
+      document.getElementById('car-price').textContent = `₹${Number(car.price).toLocaleString('en-IN')}`;
+      
+      // Car meta
+      const metaContainer = document.getElementById('car-meta');
+      metaContainer.innerHTML = `
+        <div class="meta-item">
+          <i class="fas fa-calendar"></i>
+          <span>${car.year}</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-road"></i>
+          <span>${Number(car.km || 0).toLocaleString()} km</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-gas-pump"></i>
+          <span>${car.fuel || 'N/A'}</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-cogs"></i>
+          <span>${car.trans || 'N/A'}</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>${car.location || 'N/A'}</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-images"></i>
+          <span>${allImages.length} photo${allImages.length !== 1 ? 's' : ''}</span>
+        </div>
+      `;
+      
+      // Overview
+      const overviewGrid = document.getElementById('overview-grid');
+      const specs = car.specifications?.Overview || {};
+      overviewGrid.innerHTML = Object.entries(specs).map(([key, value]) => `
+        <div class="overview-item">
+          <i class="fas fa-info-circle"></i>
+          <div>
+            <div style="font-weight:600;font-size:0.85rem">${key}</div>
+            <div style="color:var(--muted);font-size:0.8rem">${value}</div>
+          </div>
+        </div>
+      `).join('');
+      
+      // Features
+      const featuresGrid = document.getElementById('features-grid');
+      const features = car.features || [];
+      featuresGrid.innerHTML = features.map(feature => `
+        <div class="feature-item">
+          <i class="fas fa-check"></i>
+          <span>${feature}</span>
+        </div>
+      `).join('');
+      
+      // Seller info
+      const sellerInfo = car.seller_info || {};
+      const sellerAvatar = document.getElementById('seller-avatar');
+      const sellerName = document.getElementById('seller-name');
+      const sellerSince = document.getElementById('seller-since');
+      
+      if (sellerInfo.avatar_url) {
+        sellerAvatar.innerHTML = `<img src="${sellerInfo.avatar_url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover">`;
+      } else {
+        sellerAvatar.textContent = (sellerInfo.full_name || sellerInfo.username || 'S').charAt(0).toUpperCase();
+      }
+      
+      sellerName.textContent = sellerInfo.full_name || sellerInfo.username || 'Seller';
+      sellerSince.textContent = `Member since ${sellerInfo.member_since || 'N/A'}`;
+      
+      // Location
+      document.querySelector('#location-text span').textContent = car.location || 'Location not specified';
+      
+      // Related listings
+      if (car.related_listings && car.related_listings.length > 0) {
+        renderRelatedListings(car.related_listings);
+      }
+      
+      // Setup contact handlers
+      setupContactHandlers(sellerInfo);
+    }
+    
+    function renderRelatedListings(listings) {
+      const relatedSection = document.getElementById('related-section');
+      const relatedGrid = document.getElementById('related-grid');
+      
+      relatedGrid.innerHTML = listings.map(car => `
+        <div class="related-card" onclick="window.location.href='/car/${car.id}/'">
+          <div class="related-image" style="background-image:url('${car.img || 'https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=800&auto=format&fit=crop'}')"></div>
+          <div class="related-content">
+            <h4 class="related-title-text">${car.make} ${car.model}</h4>
+            <div class="related-price">₹${Number(car.price).toLocaleString('en-IN')}</div>
+            <div class="related-meta">${car.year} • ${Number(car.km || 0).toLocaleString()} km • ${car.location || 'N/A'}</div>
+          </div>
+        </div>
+      `).join('');
+      
+      relatedSection.style.display = 'block';
+    }
+    
+    function setupContactHandlers(sellerInfo) {
+      const modal = document.getElementById('contactModal');
+      const contactBtn = document.getElementById('contact-seller');
+      const showPhoneBtn = document.getElementById('show-phone');
+      const closeBtn = document.getElementById('m_close');
+      
+      contactBtn.addEventListener('click', () => {
+        document.getElementById('m_name').textContent = sellerInfo.full_name || sellerInfo.username || 'Seller';
+        document.getElementById('m_email').textContent = sellerInfo.email || 'autoproelite@gmail.com';
+        document.getElementById('m_phone').textContent = sellerInfo.phone || '9850767273';
+        document.getElementById('m_loc').textContent = sellerInfo.location || 'N/A';
+        modal.style.display = 'flex';
+      });
+      
+      showPhoneBtn.addEventListener('click', () => {
+        const phone = sellerInfo.phone || '9850767273';
+        showPhoneBtn.innerHTML = `<i class="fas fa-phone"></i> ${phone}`;
+        showPhoneBtn.disabled = true;
+        showPhoneBtn.style.background = '#f8fafc';
+      });
+      
+      closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+      
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+    
+    function showError(message) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error-message').textContent = message;
+      document.getElementById('error').style.display = 'flex';
+    }
+    
+    // Initialize
+    loadCarDetails();

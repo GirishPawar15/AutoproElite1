@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Privacy Policy{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/privacy.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="legal-wrap">
+  <div class="legal-hero">
+    <h1>Privacy Policy</h1>
+    <p>This Privacy Policy explains how AutoPro Elite collects, uses, and protects your information when you use our website and services.</p>
+    <div class="legal-muted" style="margin-top:10px">Last updated: 2025</div>
+  </div>
+
+  <section class="legal-card">
+    <h2>Information we collect</h2>
+    <ul>
+      <li><b>Account details</b>: name, email, login information.</li>
+      <li><b>Usage data</b>: pages visited, actions taken, basic device/browser info.</li>
+      <li><b>Listings & uploads</b>: images and details you submit for selling cars or damage detection.</li>
+      <li><b>Support messages</b>: when you contact us, we store the message to respond.</li>
+    </ul>
+  </section>
+
+  <section class="legal-card">
+    <h2>How we use your information</h2>
+    <ul>
+      <li>To provide and improve features like listings, cart, orders, and damage detection.</li>
+      <li>To communicate about updates, support queries, and account activity.</li>
+      <li>To prevent fraud, abuse, and security incidents.</li>
+    </ul>
+  </section>
+
+  <section class="legal-card">
+    <h2>Sharing of information</h2>
+    <p>We do not sell your personal information. We may share limited information with service providers (e.g., hosting, analytics) only to operate the service, or when required by law.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>Data retention</h2>
+    <p>We keep your data only as long as necessary for providing services and meeting legal obligations. You may request deletion of your account data by contacting support.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, contact us via the <a href="/contact/">Contact</a> page.</p>
+  </section>
+</div>
+{% block extra_js %}
+  <script src="{% static 'js/privacy.js' %}"></script>
+{% endblock %}{% endblock %}

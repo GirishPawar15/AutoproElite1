@@ -1,0 +1,249 @@
+
+{% extends 'base.html' %}{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/sell-car.css' %}">
+{% endblock %}
+{% block title %}Sell Your Car - AutoPro Elite{% endblock %}
+{% block content %}
+  <header class="page-head">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>
+          <div class="page-title"><i class="fas fa-car"></i> Sell Your Car</div>
+          <div class="page-sub">Create a professional listing and reach serious buyers fast.</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% if messages %}
+  <div class="container" style="margin-top:14px">
+    <div id="flash" style="display:grid;gap:8px">
+      {% for message in messages %}
+        <div class="flash {{ message.tags }}" style="padding:10px 12px;border-radius:10px;box-shadow:var(--shadow);font-weight:600;background:#eef6ff;color:#1e3a8a;border:1px solid #bfdbfe">
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <main class="container grid">
+    <section class="card">
+      <h3>Create Listing</h3>
+      <p class="muted">Fill the details below. You can preview before publishing.</p>
+
+      <form id="sellForm" method="post" action="/sell-car/" style="margin-top:12px">
+        {% csrf_token %}
+        
+        <!-- Personal Information Section -->
+        <h4 style="margin:20px 0 12px; color:var(--primary); font-size:1.1rem; border-bottom:2px solid var(--light-gray); padding-bottom:8px">
+          <i class="fas fa-user"></i> Personal Information
+        </h4>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="owner_name">Your Name *</label>
+            <input id="owner_name" name="owner_name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number *</label>
+            <input id="mobile" name="mobile" type="tel" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number *</label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+91 98765 43210" required />
+          </div>
+          <div class="form-group">
+            <label for="city">Your City *</label>
+            <input id="city" name="city" placeholder="Mumbai, Delhi, Bangalore" required />
+          </div>
+        </div>
+
+        <!-- Vehicle Registration Details -->
+        <h4 style="margin:20px 0 12px; color:var(--primary); font-size:1.1rem; border-bottom:2px solid var(--light-gray); padding-bottom:8px">
+          <i class="fas fa-id-card"></i> Vehicle Registration Details
+        </h4>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="registration_number">Registration Number *</label>
+            <input id="registration_number" name="registration_number" placeholder="MH 01 AB 1234" required style="text-transform:uppercase" />
+          </div>
+          <div class="form-group">
+            <label for="registration_year">Registration Year *</label>
+            <input id="registration_year" name="registration_year" type="number" min="1980" max="2026" placeholder="2019" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="manufacturing_year">Manufacturing Year *</label>
+            <input id="manufacturing_year" name="manufacturing_year" type="number" min="1980" max="2026" placeholder="2019" required />
+          </div>
+          <div class="form-group">
+            <label for="car_registration">Car Registration State *</label>
+            <select id="car_registration" name="car_registration" required>
+              <option value="">Select State</option>
+              <option>Maharashtra</option>
+              <option>Delhi</option>
+              <option>Karnataka</option>
+              <option>Tamil Nadu</option>
+              <option>Gujarat</option>
+              <option>Rajasthan</option>
+              <option>Uttar Pradesh</option>
+              <option>West Bengal</option>
+              <option>Telangana</option>
+              <option>Andhra Pradesh</option>
+              <option>Kerala</option>
+              <option>Punjab</option>
+              <option>Haryana</option>
+              <option>Madhya Pradesh</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Vehicle Details -->
+        <h4 style="margin:20px 0 12px; color:var(--primary); font-size:1.1rem; border-bottom:2px solid var(--light-gray); padding-bottom:8px">
+          <i class="fas fa-car"></i> Vehicle Details
+        </h4>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="make">Brand *</label>
+            <input id="make" name="make" placeholder="Toyota, Honda, BMW" required />
+          </div>
+          <div class="form-group">
+            <label for="model">Model Name *</label>
+            <input id="model" name="model" placeholder="Corolla, Civic, 3 Series" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="variant">Variant *</label>
+            <input id="variant" name="variant" placeholder="VXi, ZXi, LXi" required />
+          </div>
+          <div class="form-group">
+            <label for="km">Driven (KM) *</label>
+            <input id="km" name="km" type="number" min="0" step="100" placeholder="45000" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fuel">Fuel Type *</label>
+            <select id="fuel" name="fuel" required>
+              <option value="">Select</option>
+              <option>Petrol</option>
+              <option>Diesel</option>
+              <option>CNG</option>
+              <option>Hybrid</option>
+              <option>Electric</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="trans">Transmission Type *</label>
+            <select id="trans" name="trans" required>
+              <option value="">Select</option>
+              <option>Manual</option>
+              <option>Automatic</option>
+              <option>AMT</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="owners">Owner Serial *</label>
+            <select id="owners" name="owners" required>
+              <option value="">Select</option>
+              <option>1st Owner</option>
+              <option>2nd Owner</option>
+              <option>3rd Owner</option>
+              <option>4th Owner</option>
+              <option>5+ Owner</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="color">Color</label>
+            <input id="color" name="color" placeholder="White, Black, Silver" />
+          </div>
+        </div>
+
+        <!-- Pricing & Additional Info -->
+        <h4 style="margin:20px 0 12px; color:var(--primary); font-size:1.1rem; border-bottom:2px solid var(--light-gray); padding-bottom:8px">
+          <i class="fas fa-rupee-sign"></i> Pricing & Additional Information
+        </h4>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="price">Expected Price (₹) *</label>
+            <input id="price" name="price" type="number" min="10000" step="1000" placeholder="650000" required />
+          </div>
+          <div class="form-group">
+            <label for="location">Location *</label>
+            <input id="location" name="location" placeholder="Mumbai, Delhi, Bangalore" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="heard_from">Where have you heard about us? *</label>
+          <select id="heard_from" name="heard_from" required>
+            <option value="">Select</option>
+            <option>Google Search</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Friend/Family Referral</option>
+            <option>YouTube</option>
+            <option>Newspaper/Magazine</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Additional Details</label>
+          <textarea id="description" name="description" placeholder="Condition, features, service history, any modifications..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Photos</label>
+          <label class="uploader" for="photos">
+            <i class="fas fa-cloud-upload-alt"></i> Click to upload or drag and drop images
+          </label>
+          <input id="photos" type="file" accept="image/*" multiple style="display:none" />
+          <!-- Hidden image URL fields -->
+          <input type="hidden" id="img" name="img" value="" />
+          <input type="hidden" id="image_urls" name="image_urls" value="" />
+          <div id="preview" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));gap:10px;margin-top:10px"></div>
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
+          <button type="button" id="btnEstimate" class="btn btn-outline"><i class="fas fa-calculator"></i> Get Price Estimate</button>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Publish Listing</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="card">
+      <h3>Tips for a Great Listing</h3>
+      <div class="list" style="margin-top:10px">
+        <div class="tip">Use clear, well-lit photos (front, rear, interior, odometer).</div>
+        <div class="tip">Mention service history, accidents, modifications and warranty.</div>
+        <div class="tip">Set a realistic price based on year, km, condition and market.</div>
+      </div>
+
+      <h3 style="margin-top:18px">Your Drafts</h3>
+      <div id="drafts" class="list" style="margin-top:10px"></div>
+      <!-- Estimated Price Panel -->
+      <h3 style="margin-top:18px">Estimated Price</h3>
+      <div id="estimateBox" class="tip" style="display:none; margin-top:10px; min-height:150px; padding:16px 18px"></div>
+    </aside>
+  </main>
+{% block extra_js %}
+  <script src="{% static 'js/sell-car.js' %}"></script>
+{% endblock %}{% endblock %}

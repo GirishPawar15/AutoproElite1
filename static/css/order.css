@@ -1,0 +1,448 @@
+/* Container */
+.wrap {
+    max-width: 1400px;
+    margin: 110px auto 40px;
+    padding: 0 24px;
+}
+
+/* Card */
+.card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Header */
+.head {
+    padding: 24px 28px;
+    border-bottom: 2px solid #e2e8f0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.title {
+    font-weight: 800;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.title i {
+    font-size: 28px;
+}
+
+/* Body */
+.body {
+    padding: 28px;
+}
+
+.muted {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 2px solid #cbd5e1;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    background: #fff;
+}
+
+/* Table Header */
+thead {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #cbd5e1;
+    border-right: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+th:first-child {
+    padding-left: 24px;
+    border-left: none;
+}
+
+th:last-child {
+    padding-right: 24px;
+}
+
+/* Table Body */
+tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
+    transform: scale(1.005);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 18px 20px;
+    color: #334155;
+    vertical-align: middle;
+    border-right: 1px solid #f1f5f9;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+td:first-child {
+    padding-left: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    border-left: none;
+}
+
+td:last-child {
+    padding-right: 24px;
+}
+
+/* ID Column */
+td:first-child {
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    color: #6366f1;
+}
+
+/* Bill Number */
+td:nth-child(2) {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0ea5e9;
+}
+
+/* Total Amount */
+td:nth-child(5) {
+    font-weight: 700;
+    font-size: 15px;
+    color: #059669;
+}
+
+/* Actions Column */
+td:last-child {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-sm {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.btn i {
+    font-size: 14px;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* Outline Button */
+.btn-outline {
+    background: #fff;
+    border: 2px solid #667eea;
+    color: #667eea;
+}
+
+.btn-outline:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* Danger Button */
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(239, 68, 68, 0.4);
+}
+
+/* Status Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+.badge-pending {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    border: 1px solid #fbbf24;
+}
+
+.badge-paid {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+    border: 1px solid #60a5fa;
+}
+
+.badge-shipped {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    color: #4338ca;
+    border: 1px solid #818cf8;
+}
+
+.badge-completed {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #166534;
+    border: 1px solid #4ade80;
+}
+
+.badge-cancelled {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    color: #991b1b;
+    border: 1px solid #f87171;
+}
+
+/* Empty State */
+tbody tr td[colspan] {
+    text-align: center;
+    padding: 48px 24px;
+    color: #94a3b8;
+    font-size: 15px;
+    border-right: none;
+}
+
+/* Bordered Table Variant - Add class "table-bordered" to table for full grid */
+table.table-bordered th,
+table.table-bordered td {
+    border: 1px solid #cbd5e1;
+}
+
+table.table-bordered thead th {
+    border-bottom: 2px solid #94a3b8;
+    background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+table.table-bordered tbody tr:hover {
+    background: linear-gradient(90deg, #eff6ff 0%, #ffffff 100%);
+}
+
+/* Striped Table Variant - Add class "table-striped" to table */
+table.table-striped tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+table.table-striped tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+table.table-striped tbody tr:hover {
+    background: linear-gradient(90deg, #eff6ff 0%, #f8fafc 100%);
+}
+
+/* Message Box */
+#msg {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    display: none;
+    animation: slideDown 0.3s ease;
+}
+
+#msg:not(:empty) {
+    display: block;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Back Button */
+.body > div:last-child {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .wrap {
+        padding: 0 16px;
+    }
+    
+    table {
+        font-size: 13px;
+    }
+    
+    th, td {
+        padding: 12px 16px;
+    }
+    
+    .btn-sm {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        margin-top: 80px;
+    }
+    
+    .head {
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .body {
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 10px 12px;
+    }
+    
+    th:first-child,
+    td:first-child {
+        padding-left: 16px;
+    }
+    
+    th:last-child,
+    td:last-child {
+        padding-right: 16px;
+    }
+    
+    .btn-sm {
+        padding: 6px 8px;
+        font-size: 10px;
+        gap: 4px;
+    }
+    
+    .btn-sm i {
+        font-size: 12px;
+    }
+    
+    td:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        border-radius: 8px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+    
+    .badge {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+}

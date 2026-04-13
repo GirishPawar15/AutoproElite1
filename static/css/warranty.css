@@ -1,0 +1,18 @@
+  .war-wrap{max-width:1100px;margin:0 auto;padding:28px 0 56px}
+  .war-hero{background:linear-gradient(135deg, rgba(16,185,129,.12), rgba(37,99,235,.12));border:1px solid rgba(148,163,184,.35);border-radius:18px;padding:26px 24px}
+  .war-hero h1{margin:0 0 6px;font-size:2rem;color:#0f172a}
+  .war-hero p{margin:0;color:#475569;max-width:86ch}
+  .war-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
+  .war-card{background:#fff;border:1px solid rgba(148,163,184,.25);border-radius:16px;box-shadow:0 18px 35px rgba(2,6,23,.08);padding:18px}
+  .war-card h2{margin:0 0 10px;font-size:1.25rem;color:#0f172a}
+  .war-muted{color:#64748b}
+  .war-steps{display:grid;gap:10px;margin:10px 0 0}
+  .war-step{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;padding:10px 12px;border-radius:14px;background:#f8fafc;border:1px solid rgba(148,163,184,.2)}
+  .war-step b{color:#0f172a}
+  .war-table{width:100%;border-collapse:separate;border-spacing:0;margin-top:10px;overflow:hidden;border-radius:14px;border:1px solid rgba(148,163,184,.25)}
+  .war-table th,.war-table td{padding:12px 12px;text-align:left;border-bottom:1px solid rgba(148,163,184,.2)}
+  .war-table th{background:#f1f5ff;color:#0f172a;font-weight:750}
+  .war-table tr:last-child td{border-bottom:none}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid rgba(148,163,184,.25);background:#fff;color:#0f172a;text-decoration:none;font-weight:650}
+  .pill.primary{background:#2563eb;border-color:#2563eb;color:#fff}
+  .pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}

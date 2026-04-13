@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/damage-detection.css' %}">
+{% endblock %}
+
+{% block title %}Vehicle Damage Detection - AutoPro Elite{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page">
+      <h1 style="margin:0 0 20px">Vehicle Damage Assessment & Service</h1>
+      
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" data-tab="assess">
+          <i class="fas fa-magnifying-glass"></i>
+          Assess Damage
+        </button>
+        <button class="tab" data-tab="book">
+          <i class="fas fa-wrench"></i>
+          Book Service/Repair Slot
+        </button>
+      </div>
+      
+      <!-- Assess Damage Tab -->
+      <div id="assessTab" class="tab-content active">
+        <div class="topbar">
+          <div class="controls">
+            <label class="btn" for="fileInput"><i class="fas fa-upload"></i> Upload Images</label>
+            <button id="detectBtn" class="btn secondary"><i class="fas fa-magnifying-glass"></i> Run Detection</button>
+            <button id="clearBtn" class="btn" style="background:#0ea5e9"><i class="fas fa-broom"></i> Clear</button>
+            <input id="fileInput" type="file" accept="image/*" multiple hidden>
+          </div>
+        </div>
+
+        <p class="hint">Upload car images and run detection to visualize likely damaged regions. Detection will use the server API when configured, otherwise a simulated demo runs.</p>
+
+        <div id="dropzone" class="dropzone">
+          <i class="fas fa-cloud-arrow-up" style="font-size:2rem;color:#1e40af"></i>
+          <div>Drag & drop images here</div>
+          <div class="hint">or click "Upload Images"</div>
+        </div>
+
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+
+        <div class="footer-actions">
+          <span class="badge b-ok">Tip: Use clear, well-lit photos for best results</span>
+          <span class="badge b-warn">Note: Demo shows simulated boxes and labels</span>
+          <button id="bookServiceBtnAssess" class="btn" style="background:#10b981">
+            <i class="fas fa-wrench"></i> Book Service/Repair Slot
+          </button>
+        </div>
+      </div>
+      
+      <!-- Book Service Tab -->
+      <div id="bookTab" class="tab-content">
+        <div class="book-service-content">
+          <div class="service-info">
+            <h2><i class="fas fa-wrench"></i> Professional Service & Repair</h2>
+            <p>Book your service slot and get your vehicle back in perfect condition</p>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-card">
+              <i class="fas fa-tools"></i>
+              <h3>Expert Technicians</h3>
+              <p>Certified professionals with years of experience</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-clock"></i>
+              <h3>Flexible Timing</h3>
+              <p>Choose your preferred date and time slot</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Quality Assured</h3>
+              <p>Genuine parts and warranty on all services</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-tag"></i>
+              <h3>Transparent Pricing</h3>
+              <p>No hidden charges, upfront cost estimates</p>
+            </div>
+          </div>
+          
+          <button id="bookServiceBtn" class="book-btn-large">
+            <i class="fas fa-calendar-check"></i>
+            Book Service/Repair Slot Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Service Booking Modal -->
+  <div id="serviceModal" class="modal-backdrop">
+    <div class="modal service-modal">
+      <h3><i class="fas fa-wrench"></i> Book Service/Repair Slot</h3>
+      <div class="service-content">
+        <div class="damage-summary" id="damageSummary">
+          <h4>Detected Issues</h4>
+          <div id="damageList" class="damage-list"></div>
+        </div>
+        
+        <form id="serviceForm" class="service-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sv_name">Full Name *</label>
+              <input type="text" id="sv_name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="sv_phone">Phone Number *</label>
+              <input type="tel" id="sv_phone" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sv_email">Email Address *</label>
+              <input type="email" id="sv_email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="sv_city">City *</label>
+              <input type="text" id="sv_city" required placeholder="Enter your city" value="Pune">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sv_car_make">Car Make *</label>
+              <input type="text" id="sv_car_make" required placeholder="e.g., Maruti, Honda">
+            </div>
+            <div class="form-group">
+              <label for="sv_car_model">Car Model *</label>
+              <input type="text" id="sv_car_model" required placeholder="e.g., Swift, City">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sv_car_year">Year *</label>
+              <input type="number" id="sv_car_year" required placeholder="e.g., 2020" min="1990" max="2026">
+            </div>
+            <div class="form-group">
+              <label for="sv_reg_number">Registration Number</label>
+              <input type="text" id="sv_reg_number" placeholder="e.g., MH12AB1234">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sv_date">Preferred Date *</label>
+              <input type="date" id="sv_date" required>
+            </div>
+            <div class="form-group">
+              <label for="sv_time">Preferred Time *</label>
+              <select id="sv_time" required>
+                <option value="">Select time slot</option>
+                <option value="09:00-10:00">09:00 AM - 10:00 AM</option>
+                <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                <option value="12:00-13:00">12:00 PM - 01:00 PM</option>
+                <option value="14:00-15:00">02:00 PM - 03:00 PM</option>
+                <option value="15:00-16:00">03:00 PM - 04:00 PM</option>
+                <option value="16:00-17:00">04:00 PM - 05:00 PM</option>
+                <option value="17:00-18:00">05:00 PM - 06:00 PM</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="sv_service_type">Service Type *</label>
+            <select id="sv_service_type" required>
+              <option value="">Select service type</option>
+              <option value="damage_repair">Damage Repair</option>
+              <option value="general_service">General Service</option>
+              <option value="inspection">Vehicle Inspection</option>
+              <option value="painting">Painting & Denting</option>
+              <option value="parts_replacement">Parts Replacement</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="sv_message">Additional Details</label>
+            <textarea id="sv_message" rows="3" placeholder="Describe the issues or services needed"></textarea>
+          </div>
+          
+          <div class="sv-terms">
+            <input type="checkbox" id="sv_terms" required>
+            <label for="sv_terms">I agree to be contacted by the service center for confirmation</label>
+          </div>
+          
+          <div id="sv_success" class="sv-success" style="display:none">
+            <i class="fas fa-check-circle"></i>
+            <p>Service slot booked successfully! We'll contact you shortly to confirm.</p>
+          </div>
+          
+          <div id="sv_error" class="sv-error" style="display:none">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p id="sv_error_message">Something went wrong. Please try again.</p>
+          </div>
+        </form>
+      </div>
+      <div class="actions">
+        <button id="sv_close" class="btn btn-secondary">Cancel</button>
+        <button id="sv_submit" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Confirm Booking
+        </button>
+      </div>
+    </div>
+  </div>
+  
+{% block extra_js %}
+  <script src="{% static 'js/damage-detection.js' %}"></script>
+{% endblock %}
+{% endblock %}

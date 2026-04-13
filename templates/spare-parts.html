@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/spare-parts.css' %}">
+{% endblock %}
+{% block title %}Spare Parts Shop - AutoPro Elite{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="page-card">
+      <div class="header">
+        <div class="title">
+          <i class="fas fa-cogs" style="color:var(--secondary);"></i>
+          <h1>Spare Parts Shop</h1>
+        </div>
+        <div class="controls">
+          <input id="search" class="input" type="text" placeholder="Search by name or brand..." />
+          <select id="category">
+            <option value="all">All Categories</option>
+            <option>Engine</option>
+            <option>Brakes</option>
+            <option>Suspension</option>
+            <option>Electrical</option>
+            <option>Body</option>
+          </select>
+          <select id="compat">
+            <option value="all">Compatibility</option>
+            <option>Universal</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Hatchback</option>
+          </select>
+          <span id="count" class="badge">0 items</span>
+        </div>
+      </div>
+
+      <div id="grid" class="grid"></div>
+    </div>
+  </div>
+{% block extra_js %}
+  <script src="{% static 'js/spare-part.js' %}"></script>
+{% endblock %}
+{% endblock %}

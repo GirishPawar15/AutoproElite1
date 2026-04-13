@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/profit-analysis.css' %}">
+{% endblock %}
+
+{% block title %}Profit Analysis - Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="profit-analysis-container">
+  <!-- Header -->
+  <div class="analysis-header">
+    <div class="header-content">
+      <h1><i class="fas fa-chart-line"></i> Profit Analysis Dashboard</h1>
+      <p class="subtitle">Track your business profitability over time</p>
+    </div>
+    <div class="header-actions">
+      <a href="/analytics/" class="btn btn-back">
+        <i class="fas fa-arrow-left"></i> Back to Analytics
+      </a>
+      <button class="btn btn-export" onclick="exportProfitReport()">
+        <i class="fas fa-file-excel"></i> Export Report
+      </button>
+      <button class="btn btn-refresh" onclick="refreshData()">
+        <i class="fas fa-sync-alt"></i> Refresh
+      </button>
+    </div>
+  </div>
+
+  <!-- Time Period Selector -->
+  <div class="period-selector">
+    <button class="period-btn active" data-period="daily" onclick="changePeriod('daily')">
+      <i class="fas fa-calendar-day"></i>
+      <span>Daily</span>
+      <small>Last 30 Days</small>
+    </button>
+    <button class="period-btn" data-period="weekly" onclick="changePeriod('weekly')">
+      <i class="fas fa-calendar-week"></i>
+      <span>Weekly</span>
+      <small>Last 12 Weeks</small>
+    </button>
+    <button class="period-btn" data-period="monthly" onclick="changePeriod('monthly')">
+      <i class="fas fa-calendar-alt"></i>
+      <span>Monthly</span>
+      <small>Last 12 Months</small>
+    </button>
+    <button class="period-btn" data-period="yearly" onclick="changePeriod('yearly')">
+      <i class="fas fa-calendar"></i>
+      <span>Yearly</span>
+      <small>Last 5 Years</small>
+    </button>
+  </div>
+
+  <!-- Key Metrics Cards -->
+  <div class="metrics-grid">
+    <div class="metric-card profit">
+      <div class="metric-icon">
+        <i class="fas fa-dollar-sign"></i>
+      </div>
+      <div class="metric-content">
+        <h3 id="totalProfit">₹0</h3>
+        <p>Total Profit</p>
+        <span class="metric-change" id="profitChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="metric-card revenue">
+      <div class="metric-icon">
+        <i class="fas fa-rupee-sign"></i>
+      </div>
+      <div class="metric-content">
+        <h3 id="totalRevenue">₹0</h3>
+        <p>Total Revenue</p>
+        <span class="metric-change" id="revenueChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="metric-card cost">
+      <div class="metric-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="metric-content">
+        <h3 id="totalCost">₹0</h3>
+        <p>Total Cost</p>
+        <span class="metric-change" id="costChange">+0%</span>
+      </div>
+    </div>
+
+    <div class="metric-card margin">
+      <div class="metric-icon">
+        <i class="fas fa-percentage"></i>
+      </div>
+      <div class="metric-content">
+        <h3 id="profitMargin">0%</h3>
+        <p>Profit Margin</p>
+        <span class="metric-change" id="marginChange">+0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Profit Chart -->
+  <div class="chart-card main-chart">
+    <div class="chart-header">
+      <div>
+        <h3><i class="fas fa-chart-area"></i> Profit Trend Analysis</h3>
+        <p class="chart-subtitle" id="chartSubtitle">Daily profit for the last 30 days</p>
+      </div>
+      <div class="chart-controls">
+        <button class="chart-btn" onclick="toggleChartType()" title="Toggle Chart Type">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+        <button class="chart-btn" onclick="refreshChart()" title="Refresh Chart">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chart-body">
+      <canvas id="profitChart"></canvas>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item">
+        <span class="legend-color profit"></span>
+        <span>Profit</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-color revenue"></span>
+        <span>Revenue</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-color cost"></span>
+        <span>Cost</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Charts Row -->
+  <div class="charts-row">
+    <!-- Profit Distribution -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-chart-pie"></i> Profit Distribution</h3>
+      </div>
+      <div class="chart-body">
+        <canvas id="profitDistributionChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Profit Comparison -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <h3><i class="fas fa-chart-bar"></i> Period Comparison</h3>
+      </div>
+      <div class="chart-body">
+        <canvas id="profitComparisonChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Statistics Table -->
+  <div class="table-card">
+    <div class="table-header">
+      <h3><i class="fas fa-table"></i> Detailed Profit Breakdown</h3>
+      <div class="table-actions">
+        <input type="text" id="searchTable" placeholder="Search..." class="search-input">
+        <button class="btn btn-sm" onclick="downloadTableCSV()">
+          <i class="fas fa-download"></i> CSV
+        </button>
+      </div>
+    </div>
+    <div class="table-body">
+      <table id="profitTable">
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Revenue</th>
+            <th>Cost</th>
+            <th>Profit</th>
+            <th>Margin %</th>
+            <th>Orders</th>
+            <th>Avg Profit/Order</th>
+          </tr>
+        </thead>
+        <tbody id="profitTableBody">
+          <tr>
+            <td colspan="7" class="loading">Loading data...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Insights Section -->
+  <div class="insights-section">
+    <h3><i class="fas fa-lightbulb"></i> Key Insights</h3>
+    <div class="insights-grid" id="insightsGrid">
+      <div class="insight-card">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Analyzing data...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{% static 'js/profit-analysis.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/warranty.css' %}">
+{% endblock %}
+{% block title %}Warranty Information{% endblock %}
+
+
+
+{% block content %}
+<div class="war-wrap">
+  <div class="war-hero">
+    <h1>Warranty Information</h1>
+    <p>Warranty terms depend on the product and seller. Below is a simple coverage guide for spare parts purchased through AutoPro Elite and recommended steps to raise a claim.</p>
+  </div>
+
+  <div class="war-grid">
+    <section class="war-card">
+      <h2>Coverage overview</h2>
+      <div class="war-muted">Typical coverage periods (may vary by brand/OEM). Always keep the invoice and original packaging.</div>
+
+      <table class="war-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Typical Warranty</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Electrical (battery, sensors, bulbs)</td>
+            <td>3–12 months</td>
+            <td>Warranty applies to manufacturing defects only.</td>
+          </tr>
+          <tr>
+            <td>Engine &amp; Components</td>
+            <td>3–6 months</td>
+            <td>Requires professional installation and proof.</td>
+          </tr>
+          <tr>
+            <td>Brakes (pads/discs)</td>
+            <td>Limited / No warranty</td>
+            <td>Wear-and-tear items are usually excluded.</td>
+          </tr>
+          <tr>
+            <td>Suspension</td>
+            <td>3–6 months</td>
+            <td>May require inspection report for claim.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pill-row">
+        <a class="pill primary" href="/contact/">Start a Claim</a>
+        <a class="pill" href="/faq/">Read FAQ</a>
+        <a class="pill" href="/spare-parts/">Shop Spare Parts</a>
+      </div>
+    </section>
+
+    <section class="war-card">
+      <h2>How to raise a warranty claim</h2>
+      <div class="war-steps">
+        <div class="war-step">
+          <div><i class="fas fa-receipt" aria-hidden="true"></i></div>
+          <div><b>1) Keep invoice</b><div class="war-muted">Invoice/order details + product SKU are required.</div></div>
+        </div>
+        <div class="war-step">
+          <div><i class="fas fa-camera" aria-hidden="true"></i></div>
+          <div><b>2) Share photos</b><div class="war-muted">Upload clear images of the part, packaging, and defect.</div></div>
+        </div>
+        <div class="war-step">
+          <div><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i></div>
+          <div><b>3) Installation proof</b><div class="war-muted">If applicable, provide a mechanic/service center invoice.</div></div>
+        </div>
+        <div class="war-step">
+          <div><i class="fas fa-circle-check" aria-hidden="true"></i></div>
+          <div><b>4) Verification</b><div class="war-muted">We verify brand warranty and confirm replacement/refund eligibility.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="war-card">
+      <h2>Common exclusions</h2>
+      <div class="war-muted">Warranty is usually not applicable if any of these are found:</div>
+      <div class="war-steps" style="margin-top:10px">
+        <div class="war-step"><div><i class="fas fa-xmark" aria-hidden="true"></i></div><div><b>Wear &amp; tear</b><div class="war-muted">Brake pads, wipers, clutch plates, etc.</div></div></div>
+        <div class="war-step"><div><i class="fas fa-xmark" aria-hidden="true"></i></div><div><b>Improper installation</b><div class="war-muted">Incorrect fitment or missing torque/spec procedure.</div></div></div>
+        <div class="war-step"><div><i class="fas fa-xmark" aria-hidden="true"></i></div><div><b>Accidental damage</b><div class="war-muted">Crash, water ingress, fire, modifications.</div></div></div>
+        <div class="war-step"><div><i class="fas fa-xmark" aria-hidden="true"></i></div><div><b>Tampered serial / missing packaging</b><div class="war-muted">Serial removed or packaging not available when required.</div></div></div>
+      </div>
+    </section>
+  </div>
+</div>
+{% block extra_js %}
+  <script src="{% static 'js/warranty.js' %}"></script>
+{% endblock %}
+{% endblock %}

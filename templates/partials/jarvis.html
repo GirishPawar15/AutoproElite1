@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="jarvis notranslate" id="jarvisRoot" aria-live="polite" translate="no">
+  <button class="jarvis-mic" id="jarvisMic" type="button" aria-label="Jarvis voice assistant">
+    <span class="jarvis-mic-ring"></span>
+    <span class="jarvis-mic-ring jarvis-mic-ring2"></span>
+    <i class="fas fa-microphone"></i>
+  </button>
+
+  <div class="jarvis-panel" id="jarvisPanel" role="dialog" aria-label="Jarvis assistant panel">
+    <div class="jarvis-panel-header">
+      <div class="jarvis-title">
+        <span class="jarvis-dot"></span>
+        <span>Jarvis</span>
+      </div>
+      <button class="jarvis-close" id="jarvisClose" type="button" aria-label="Close Jarvis">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="jarvis-panel-body">
+      <div class="jarvis-status" id="jarvisStatus">Ready</div>
+      <div class="jarvis-wave" id="jarvisWave" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="jarvis-log" id="jarvisLog"></div>
+    </div>
+
+    <div class="jarvis-panel-footer">
+      <button class="jarvis-btn" id="jarvisStartStop" type="button">Start Listening</button>
+      <button class="jarvis-btn jarvis-btn-secondary" id="jarvisHelp" type="button">Commands</button>
+    </div>
+  </div>
+</div>

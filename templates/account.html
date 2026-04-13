@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+{% endblock %}
+{% block title %}My Account - AutoPro Elite{% endblock %}
+
+{% block content %}
+    
+
+</head>
+<body class="theme-violet shadow-strong indicator-pill">
+
+
+  <div class="account-wrap">
+    <div class="account-hero">
+      <div class="account-header">
+        <div class="account-title">
+          <div class="avatar" id="accInitials">AP</div>
+          <div>
+            <div style="font-weight:800;font-size:1.05rem" id="accUsername">@username</div>
+            <div class="muted" id="accEmail">email@example.com</div>
+          </div>
+        </div>
+        <div class="quick-actions">
+          <a href="/settings/" class="qa" style="text-decoration:none"><i class="fas fa-gear"></i> Settings</a>
+          <a href="/orders/" class="qa" style="text-decoration:none"><i class="fas fa-receipt"></i> Orders</a>
+          <a href="/profile/" class="qa" style="text-decoration:none"><i class="fas fa-id-card"></i> My Profile</a>
+          <button id="logoutBtn" class="btn btn-danger"><i class="fas fa-right-from-bracket"></i> Logout</button>
+        </div>
+      </div>
+      <div class="account-body">
+        <div class="info-grid">
+          <div class="card">
+            <div class="muted">User ID</div>
+            <div id="accId">-</div>
+          </div>
+          <div class="card">
+            <div class="muted">Auth</div>
+            <div id="accAuth">Not authenticated</div>
+          </div>
+        </div>
+
+        <div class="cart-section">
+          <h3 style="margin:18px 0 10px;">My Cart</h3>
+          <ul id="cartItems" class="cart-items"></ul>
+          <div id="cartEmpty" class="cart-empty" style="display:none">Your cart is empty.</div>
+          <div id="cartTotal" class="cart-total">Total: ₹0 (0 items)</div>
+          <div style="margin-top:16px; display:flex; gap:10px">
+            <button id="checkoutBtn" class="btn btn-primary" style="display:none">
+              <i class="fas fa-credit-card"></i> Proceed to Checkout
+            </button>
+            <button id="clearCartBtn" class="btn btn-secondary" style="display:none">
+              <i class="fas fa-trash"></i> Clear Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% block extra_js %}
+  <script src="{% static 'js/account.js' %}"></script>
+{% endblock %}
+{% endblock %}

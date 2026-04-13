@@ -1,0 +1,97 @@
+{% load static %}
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-logo" onclick="location.href='/'" style="cursor:pointer">
+      <img src="https://www.pngmart.com/files/23/Mechanic-Logo-PNG-Photo.png"
+           alt="AutoPro Elite Logo" width="60" height="100" loading="eager" />
+      <span>AutoPro Elite</span>
+    </div>
+
+    <ul class="nav-menu">
+      <!-- <li><a href="/" class="{% if active == 'home' %}active{% endif %}">Home</a></li> -->
+      <li><a href="/sell-car/" class="{% if active == 'sell' %}active{% endif %}">Sell Your Car</a></li>
+      <li><a href="/shop/" class="{% if active == 'shop' %}active{% endif %}">Shop</a></li>
+      <li><a href="/spare-parts/" class="{% if active == 'parts' %}active{% endif %}">Spare Parts</a></li>
+      <li><a href="/assess-damage/" class="{% if active == 'assess' %}active{% endif %}">Assess Damage</a></li>
+      <li><a href="/damage-detection/" class="{% if active == 'detection' %}active{% endif %}">Damage Detection</a></li>
+      <!-- <li><a href="/#features" class="{% if active == 'features' %}active{% endif %}">Features</a></li>
+      <li><a href="/about/" class="{% if active == 'about' %}active{% endif %}">About</a></li>
+      <li><a href="/contact/" class="{% if active == 'contact' %}active{% endif %}">Contact</a></li> -->
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Language Translator -->
+      {% include 'partials/translator.html' %}
+      
+      <!-- Desktop text buttons -->
+      <a class="btn btn-outline btn-text" id="loginBtn" href="/login/">Login</a>
+      <a class="btn btn-primary btn-text" id="signupBtn" href="/signup/">Sign Up</a>
+      <a class="btn btn-outline btn-text" id="accountBtn" href="/account/" style="display:none">My Account</a>
+      <button class="btn btn-primary btn-text" id="logoutBtnNav" style="display:none">Logout</button>
+
+    </div>
+
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+<style>
+ /* Scoped navbar auth actions layout */
+  .main-nav { overflow: visible; }
+  .main-nav .nav-container { display:flex; align-items:center; justify-content:space-between; gap:16px; overflow: visible; flex-wrap:wrap; }
+  .main-nav .nav-logo { flex:0 0 auto; }
+  .main-nav .nav-logo img { height:48px !important; width:auto !important; }
+  .main-nav .nav-menu { display:flex; flex:1 1 auto; flex-wrap:wrap; justify-content:center; gap:24px; margin:0; padding:0; min-width:0; overflow: visible; }
+  .main-nav .nav-menu li { white-space:nowrap; }
+  .main-nav .nav-menu::-webkit-scrollbar { display:none; }
+  .main-nav .nav-menu { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .main-nav .nav-actions { margin-left:auto; display:flex; align-items:center; gap:12px; flex-shrink:0; overflow: visible; }
+  .main-nav .btn-text { display:inline-flex; align-items:center; justify-content:center; height:26px; padding:0 8px; font-size:0.875rem; }
+  .main-nav .nav-logo span { white-space:nowrap; }   
+  /* Ensure Login and Sign Up have identical width on desktop */
+  .main-nav #loginBtn.btn-text, .main-nav #signupBtn.btn-text { min-width:90px; }
+  @media (max-width: 1024px) {
+    .main-nav .nav-menu { gap:16px; }
+    .main-nav .nav-actions { gap:10px; }
+  }
+
+  /* Small screens: keep text buttons visible */
+  @media (max-width: 640px) {
+    .main-nav .btn-text { display:inline-flex !important; }
+    .main-nav .nav-actions { gap:8px; }
+    /* Slightly reduce brand text on very small screens to keep one-line */
+    .main-nav .nav-logo span { font-size:0.95rem; }
+    .main-nav .nav-container { flex-wrap:wrap; }
+    .main-nav .nav-menu { width:100%; flex-wrap:wrap; justify-content:flex-start; gap:10px; padding-top:6px; }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle=document.getElementById('navToggle');
+    const menu=document.querySelector('.nav-menu');
+    const nav=document.querySelector('.main-nav');
+    if(toggle&&menu){toggle.addEventListener('click',()=>{toggle.classList.toggle('active');menu.classList.toggle('active');});}
+    window.addEventListener('scroll',()=>{if(window.scrollY>10) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');});
+    // Auth button visibility
+    const token = (typeof localStorage!=='undefined') && localStorage.getItem('ap_token');
+    const loggedIn = !!token;
+    const loginBtn=document.getElementById('loginBtn');
+    const signupBtn=document.getElementById('signupBtn');
+    const accountBtn=document.getElementById('accountBtn');
+    const logoutBtn=document.getElementById('logoutBtnNav');
+
+    // Visibility for desktop text buttons
+    if(accountBtn) accountBtn.style.display = loggedIn ? 'inline-flex' : 'none';
+    if(logoutBtn) logoutBtn.style.display = loggedIn ? 'inline-flex' : 'none';
+    if(loginBtn) loginBtn.style.display = loggedIn ? 'none' : 'inline-flex';
+    if(signupBtn) signupBtn.style.display = loggedIn ? 'none' : 'inline-flex';
+
+    const doLogout = () => { try{ localStorage.removeItem('ap_token'); localStorage.removeItem('ap_user'); localStorage.removeItem('authToken'); localStorage.removeItem('user'); }catch(e){} location.href='/'; };
+    if(logoutBtn) logoutBtn.onclick = doLogout;
+  });
+
+</script>

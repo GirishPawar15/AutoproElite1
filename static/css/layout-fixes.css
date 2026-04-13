@@ -1,0 +1,314 @@
+/* ============================================
+   CONSOLIDATED LAYOUT FIXES FOR AUTOPRO ELITE
+   ============================================ */
+
+/* Root Variables */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --secondary: #f59e0b;
+    --accent: #10b981;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --light-gray: #e2e8f0;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: all 0.3s ease;
+}
+
+/* Navbar stacking: above content, below modals */
+.main-nav { z-index: 1000; }
+
+/* Translator dropdown / menus: above navbar content but below modals */
+.translator-dropdown { z-index: 2000; }
+
+/* Modal layers should always win */
+.modal, .modal-backdrop, .modal-overlay, .modal-content, .modal-panel { z-index: 5000; }
+
+/* Global Reset & Body Fixes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(15,23,42,0.75), rgba(15,23,42,0.75)), 
+                url('https://media.istockphoto.com/id/182154020/photo/car-and-chassis-x-ray-blueprint.jpg?s=612x612&w=0&k=20&c=bunfXaUkFfok5KxBnhNEz56lz_6i1OzYfvwBeqKs3L0=') center/cover fixed;
+    color: var(--dark);
+    line-height: 1.6;
+    padding-top: 90px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Ensure fixed-header pages don't get content hidden under navbar */
+:root {
+    --nav-height: 90px;
+}
+
+@media (max-width: 768px) {
+    :root { --nav-height: 70px; }
+}
+
+body { padding-top: var(--nav-height); }
+
+/* Common page header sections should not slide under fixed nav */
+header.hero,
+.page-head,
+.hero-section {
+    scroll-margin-top: calc(var(--nav-height) + 12px);
+}
+
+/* Avoid horizontal overflow causing elements to overlap */
+html, body { overflow-x: hidden; }
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Fixes */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.82));
+    backdrop-filter: saturate(1.2) blur(8px);
+    box-shadow: 0 10px 30px rgba(2,6,23,.12);
+    border-bottom: 1px solid rgba(148,163,184,.25);
+    z-index: 1000;
+    padding: 15px 0;
+    transition: var(--transition);
+}
+
+.main-nav.scrolled {
+    padding: 15px 0;
+    background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.94));
+    box-shadow: 0 12px 32px rgba(2,6,23,.16);
+}
+
+/* Footer Fixes */
+.main-footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 45px;
+    margin-top: 60px;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Chatbot Widget Fixes */
+.chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.chatbot-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(221, 225, 233, 0.3);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chatbot-panel {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 350px;
+    height: 440px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.chatbot-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Main Content Area Fixes */
+main {
+    min-height: calc(100vh - 200px);
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section Fixes */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+/* Modal Fixes */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(2,6,23,.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(2,6,23,.2);
+    width: min(420px, 90vw);
+    padding: 18px;
+    border: 1px solid var(--border);
+    position: relative;
+    z-index: 1201;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .chatbot-widget {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .chatbot-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .chatbot-panel {
+        width: 90%;
+        right: 5%;
+        bottom: 80px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-nav {
+        padding: 10px 0;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: white;
+        width: 80%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        padding: 40px 20px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .nav-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--dark);
+        margin: 2px 0;
+        transition: var(--transition);
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .chatbot-widget {
+        bottom: 5px;
+        right: 5px;
+    }
+    
+    .main-footer {
+        padding-top: 30px;
+        margin-top: 40px;
+    }
+}

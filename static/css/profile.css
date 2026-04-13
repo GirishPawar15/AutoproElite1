@@ -1,0 +1,27 @@
+   .wrap{max-width:1000px;margin:110px auto 40px;padding:0 20px}
+    .card{border:1px solid #e2e8f0;border-radius:14px;background:#fff;box-shadow:0 12px 28px rgba(2,6,23,.06)}
+    .head{padding:18px 20px;border-bottom:1px solid #e2e8f0;background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.86));backdrop-filter:blur(8px)}
+    .title{font-weight:800;display:flex;align-items:center;gap:10px}
+    .body{padding:18px 20px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form-group{display:flex;flex-direction:column;gap:8px}
+    label{font-weight:600;color:#0f172a}
+    input,select{border:2px solid #e2e8f0;border-radius:10px;padding:10px 12px;font-size:15px;outline:none}
+    input:focus,select:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:none;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer}
+    .btn-primary{background:#2563eb;color:#fff}
+    .btn-outline{background:#fff;border:2px solid #2563eb;color:#2563eb}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .hint{color:#64748b;font-size:.92rem}
+    .uploader{border:2px dashed #e2e8f0;border-radius:10px;padding:12px;text-align:center;color:#64748b}
+    .preview{display:flex;gap:10px;align-items:center}
+    .preview img{width:120px;height:90px;object-fit:cover;border-radius:10px;border:1px solid #e2e8f0}
+    /* Summary view styles */
+    .summary{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .summary .kv{display:flex;flex-direction:column;border:1px solid #e2e8f0;border-radius:12px;padding:12px}
+    .summary .kv .k{font-size:.85rem;color:#64748b}
+    .summary .kv .v{font-weight:700}
+    .img-row{display:flex;gap:16px;align-items:flex-start;margin-top:8px}
+    .img-row .block{border:1px solid #e2e8f0;border-radius:12px;padding:10px}
+    .img-row img{width:160px;height:120px;object-fit:cover;border-radius:10px;border:1px solid #e2e8f0}

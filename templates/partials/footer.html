@@ -1,0 +1,101 @@
+{% load static %}
+
+<footer class="main-footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://www.pngmart.com/files/23/Mechanic-Logo-PNG-Photo.png" alt="AutoPro Elite Logo" width="110" height="110" loading="lazy" />
+                        <h3>AutoPro Elite</h3>
+                    </div>
+                    <p>Excellence in automotive solutions. Professional service, quality parts, and expert advice for all your vehicle needs.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com" class="social-link"><img src="https://play-lh.googleusercontent.com/A-Rnrh0J7iKmABskTonqFAANRLGTGUg_nuE4PEMYwJavL3nPt5uWsU2WO_DSgV_mOOM" alt="Google Play" style="width: 24px; height: 24px; border-radius: 50%;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="/help/">Help Center</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <!-- <li><a href="#" id="liveChatLink">Live Chat</a></li>
+                    <li><a href="/faq/">FAQ</a></li> -->
+                    <li><a href="/warranty/">Warranty</a></li>
+                </ul>
+            </div>
+
+             <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Ring Road, paranda-413502</p>
+                    <p><i class="fas fa-phone"></i> +91 7972729804</p>
+                    <p><i class="fas fa-envelope"></i> autoproelite.info@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 AutoPro Elite. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/terms/">Terms of Service</a>
+                    <a href="/cookie-policy/">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Chatbot Widget -->
+    <div class="chatbot-widget notranslate" translate="no">
+        <div class="chatbot-icon" id="chatbotIcon">
+            <img src="https://png.pngtree.com/png-clipart/20250305/original/pngtree-cheerful-mechanic-logo-friendly-and-approachable-branding-png-image_20576927.png" alt="Mechanic Assistant" loading="lazy" />
+            <div class="chatbot-pulse"></div>
+        </div>
+        <div class="chatbot-tooltip">Need help? Chat with our mechanic!</div>
+        
+        <!-- Chatbot Panel -->
+        <div class="chatbot-panel" id="chatbotPanel">
+            <div class="chatbot-header">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right:8px">
+                        <circle cx="48" cy="48" r="44" fill="#e2e8f0"/>
+                        <g fill="#1e293b">
+                            <path d="M30 58h36c1.7 0 3-1.3 3-3v-8c0-7.7-10.7-14-21-14s-21 6.3-21 14v8c0 1.7 1.3 3 3 3z"/>
+                            <circle cx="39" cy="47" r="5" fill="#3b82f6"/>
+                            <circle cx="57" cy="47" r="5" fill="#3b82f6"/>
+                        </g>
+                    </svg>
+                    AutoPro Mechanic
+                </h3>
+                <button class="chatbot-close" id="chatbotClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <svg width="18" height="18" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="48" cy="48" r="44" fill="#e2e8f0"/>
+                            <g fill="#1e293b">
+                                <path d="M30 58h36c1.7 0 3-1.3 3-3v-8c0-7.7-10.7-14-21-14s-21 6.3-21 14v8c0 1.7 1.3 3 3 3z"/>
+                                <circle cx="39" cy="47" r="5" fill="#3b82f6"/>
+                                <circle cx="57" cy="47" r="5" fill="#3b82f6"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm your AutoPro mechanic assistant. How can I help you with your vehicle today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbotInput" placeholder="Ask about your car problems...">
+                <button id="voiceInputBtn" class="voice-btn" title="Voice Input"><i class="fas fa-microphone"></i></button>
+                <button id="sendChatMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    </footer>

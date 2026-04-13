@@ -1,0 +1,5214 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$8iqRuYT32Pe2SGYnLQqIXz$P+2TbN2pzOhQaziswUebDoQ5kphI2xJDxQX3gMT0kos=",
+        "last_login": "2026-04-11T04:00:03.198Z",
+        "is_superuser": true,
+        "username": "autoproeliteshop",
+        "first_name": "",
+        "last_name": "",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-08-25T04:05:40.521Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$omSYaFX2AJVIO7m4mMSGII$sTp3/5ExY4ayRB3ohcjPe0Ml0+aIo7c3Yq4mIokJFdU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Girish",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-08-26T15:25:44.395Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$6LMuAJk9RqRTSXyNBpHhKb$PWZVBqnv0e+we2LIWWzPkYaHijaL/1KnqT2bp5ct7Ik=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "amanpathan23122006",
+        "first_name": "Aman",
+        "last_name": "Pathan",
+        "email": "amanpathan23122006@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-10T00:07:18.215Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$DwKg5kmNGzS3z0pQi5RWMF$DCvUoxgHmZOqVHE+eWjprmwQcLBHpUqCJ1QXN5OWO6U=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ziyankazi007",
+        "first_name": "Ziyan",
+        "last_name": "Kazi",
+        "email": "ziyankazi007@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-10T13:00:55.457Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$XYeUnOU70uuzCeh0dQTQ6b$yRrwDORs7h68r1Ywzg4fegbHASVt99cSmFNeHYH3atk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "thesilentkiller0008",
+        "first_name": "Girish Pawar",
+        "last_name": "",
+        "email": "thesilentkiller0008@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-11T08:02:35.632Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$2FGOxJWj3L79BU5xAOfhB1$71s3oHJPetULP85krSG4LuGivcSf0FlRsvOG+fXQoq4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ziyan123",
+        "first_name": "Ziyan",
+        "last_name": "Kazi",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T05:09:59.195Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$xeJdwzr4bWi3VxzQJp7mTz$K7d8MnI4RXhWZG4pV0ywoDWsJ01krfd4ITW3gbRLdFU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Giri",
+        "first_name": "Girish",
+        "last_name": "Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T05:12:41.729Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$rnXGahJm5fRRv4fltygmx0$8vcnUUC/JHkU/lARKL6Vjk91lOzq8ayirmM4yfmvayU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "amitabh",
+        "first_name": "amitabh",
+        "last_name": "shinde",
+        "email": "amitabhshindevolley45@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T05:14:04.000Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$YvHMECorQiz3TVUGHJsjv5$iflbLqRdhNf6b4a6B8OypEzQjUBQW4azfyi8i+LaPtA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "amit",
+        "first_name": "amitabh",
+        "last_name": "",
+        "email": "amit123@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T05:16:11.052Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$054NPFdQwcSlGY4byMef3X$DYsNYyC3U8cYUl5bX9R2Ufj/k8jZcPapRHlXpnhlGZU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "nageshpawar577",
+        "first_name": "Nagesh",
+        "last_name": "Pawar",
+        "email": "nageshpawar577@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T05:21:21.228Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$Tm2E5jty0GLps0ELNLkwGz$Aj2c7Be6UI0LF7U+LN8+pE8gbBKwwRueljd2wuM/eCk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "admin12",
+        "first_name": "Girish",
+        "last_name": "Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T16:33:22.533Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$FugF4OA6rZsEDM7YEphcR7$3jxCGsZItXs/rNwGlabIXNku+j2HVO8PwLa8xTB82aw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "girishpawar1512@gmail.com",
+        "first_name": "Girish",
+        "last_name": "Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-07T16:41:24.039Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$bGfqzc6tTH5WLviGpDw7Qx$o4kQcd85KmrNNVhGCxgQRvvHTtCh3IiLmcF3pm2X0OI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ziyan",
+        "first_name": "ziyan",
+        "last_name": "Kazi",
+        "email": "ziyankazi007@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-08T06:17:26.485Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$UqIeKmve7pbjcqlZ5CvLfZ$9s4NzING0l5dpHqTUcEcnm8I44fF8Ucti0KbVVOk4K8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "zk",
+        "first_name": "ziyan",
+        "last_name": "kazi",
+        "email": "ziyankazi007@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-08T08:53:27.838Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$pKX9uOPeZKNagimHCQ9epd$G4saJbXfpuWiZGA74y2oF+itPfh2ga/NVfScDIWM9NA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "zk07",
+        "first_name": "ziyan",
+        "last_name": "jaker kazi",
+        "email": "ziyankazi007@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-08T08:56:40.977Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$8lriWCUHEsug4YXiddqS5j$fvfU1a08Fwiq90NDjQFi28wxfuafl+HK3rcNGWuaIcY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "amey11",
+        "first_name": "Amey",
+        "last_name": "Bhatlavande",
+        "email": "amey.bhatlavande@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-08T10:21:12.203Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$jGHGSnpCKtPor1LCwVZM3g$/hk1chxiJAAmNtOz0MNXfdIgjQME9TNyvQtF+CVZC1w=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "zx",
+        "first_name": "azsd",
+        "last_name": "",
+        "email": "girishpawar1512@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-11T03:05:07.768Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1vynzdxfw4xndd8smeb0dtuajl498d3l",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUgpxyzbx8Ugp9S7KNTMP9TQq0C11KwzL9nLKcctOLo53V9JB1ZeXWlEC1KavVAsAnDMcLA:1vzkOi:nvXFfQpEN2HGdgLOnGWQgY803SiwTo1-fUPUlPXte1Y",
+        "expire_date": "2026-03-23T23:52:28.496Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1yryjbaujxyad8onkcjakl4pcu8dg4az",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1w4fma:KmtukVQcZItByhzjvtyYw-C86zC7Z3a3u1gOaQhtR1k",
+        "expire_date": "2026-03-24T13:57:28.854Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2ize955kj1kvpe0td1fcwldzpn3b67b7",
+    "fields": {
+        "session_data": ".eJxVjMkKwjAURf8la61Jh7zg0mHjgCBOu_KSvA4qDSQRBPHfreKm23PuuS9WO1ffqXT4iE0ZIkZiU3bh850_j_fy5BenQ5VvzqvLGr1ZpKFdwnHMRsOuo2fss0nPyx94BPJla3sGQ6bR3Kj7CnvFrnaJcV30rU6-k-RvQ7J1lu6z_3Zw0GBo-jpFqniFVBhAy6XkQmsJSuhM5amQYMFWiuegFAkEmYEVRZECkcjJZNqy9wccD1J4:1w02LZ:WKh2erOWz6-FfUuka-E6kq1D8I20Dr6dMiNgQ-VW50Y",
+        "expire_date": "2026-03-11T19:02:25.914Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2m1309d5bkk4z9wsc962fatg69jxr6hr",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1wAQ6x:rMc5kCQXiOAvVcTk0jd2NnMWOe5Q60X1O4DMM6FMmOM",
+        "expire_date": "2026-04-09T10:26:15.033Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3vynellgzxnq67o4nh62es01ne70aitv",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUiqLDDUtizLwTfM1s6i0NC7IrvJIS630Ny8ryM0Jci-IUtJB1ZeXWlEC1KavVAsArs8cpQ:1vzkOl:t5S6-r9XipALz9jvWlPmndJIWn0dqrz8KAwiI8dVLL0",
+        "expire_date": "2026-03-23T23:52:31.895Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "44bcupeqfl8j5tpm15u3th8lfvo9xg1p",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvINM3PStQwsLfIrrShPNyovyc4qiggpC_ZyNgrKdfVwV9JB1ZeXWlEC1KavVAsAqsYcbQ:1vzkOo:kIenRZ6puaRfio1t93NLYvl7_u94eAEAI9-cTdvdDws",
+        "expire_date": "2026-03-23T23:52:34.820Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4prxpdaz6p8zilrspzirhnqmpbgytzr3",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vzoMV:j_hfd8cLnAIirlRuYYQiWcU-RsZWv8-Gr9zENlMD_H4",
+        "expire_date": "2026-03-11T04:06:27.884Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "56hzx0adht8cjbgnp4opskgevy3yq7s2",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvJOqnI3yy1ODw8yLC01SIxwN_csC4lPqvDzz_YySzXJUdJB1ZeXWlEC1KavVAsAqt8cXw:1vzkOo:7Q7bKGB8SNO5neSvnxA5QQb-cqvd34ak-QWgnCyqrQ0",
+        "expire_date": "2026-03-23T23:52:34.216Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5xpx79j5sztn7z600heps6cxb1jb0lpc",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUqqs9Mz1cSvLdQ0utiiudCxKdUotz0gxdvILqXAvDfMNU9JB1ZeXWlEC1KavVAsAyFYdAg:1vzkOn:4REdN0zULMEip4-3xeCfBV0iywDvq9V2E8hOMNuKZng",
+        "expire_date": "2026-03-23T23:52:33.146Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6ffk3wtwyomez0e3shpjep5yixwv8q10",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvKp8kircLbwNjQwKMuuckoqDs738Sos0jUvCrPM93cqVtJB1ZeXWlEC1KavVAsAoQscOA:1w03m7:3yjb2nPiAVceuNgCDxVkHwgZN02lFYIMCSAyu47R-9s",
+        "expire_date": "2026-03-11T20:33:55.585Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6lp9sj4td1qtd17qrs4auoq25c68l0d3",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUsp1DQuzzHT3dNLVNclKNQx3jzfLjC92D87ITXEucHGuVNJB1ZeXWlEC1KavVAsAiDQbxA:1vzkOl:NOC1AYLWwJxsuH-hLYtKPJYLB0iBYFqdHvm-PQsxtkA",
+        "expire_date": "2026-03-23T23:52:31.889Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7ntpn6mdysowevjm5ifrhfdnws6av617",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUoowDykrTHYJDYwPiagIrEopLi4qjSoMMQmrLDdL9c80UdJB1ZeXWlEC1KavVAsAyj8dJg:1vzkOe:-Scy0G6CWP1qbDjnCUryM1MlIr7AQ5J4ubh8jXi6DHQ",
+        "expire_date": "2026-03-23T23:52:24.982Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8g3v3n9hraiax64c4dw3y6rcu4zjzkut",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1uqOYS:yZZuRxtiTXRH-sS461VjosKbgf7V9wFtu1tmqqgZbCE",
+        "expire_date": "2025-09-08T04:11:36.686Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8xlysorae486za4vfd3fkqfokm71uprf",
+    "fields": {
+        "session_data": ".eJxdjMtuwjAQRf_Fa0jtPDwWywh1h1qkIpbROJ7EIWBLsUNBqP_eBLEAtvfcc26swjHaagw0VJ1hKwZs8bxprHtyMzAHdK1Pau_i0OlkviQPGpKNN3QsH9-XgMVgJztFaniDVNSAhkvJhdYSlNCZylMhwYBpFM9BKRIIMgMjiiIFIpFTnek52nrfHqny93aIGGnqXofv5c7-9Ovt-rQ_jeV288ld6Pf293zuvg7Xd8_RJU7aB_v7B-T1VDw:1wBPhg:XIxmUdwiQafdi0fB63os1kHwcv8bUWR74XRbPnuto5g",
+        "expire_date": "2026-04-12T04:12:16.107Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "awc3wokzlv1b5rnbzcc7mrnxkj8l9er5",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUqrIcslxrEryLzPMzjTMztEtzTAuzvWudAtKTc73ziwOUtJB1ZeXWlEC1KavVAsAx58dGg:1vzkOo:kx4gYzci7Oox0Evss6oWGf55A_awha8Ar6aUYN4S-oU",
+        "expire_date": "2026-03-23T23:52:34.777Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "b6ruh2id1y7l1sxwg1hylk12kj3ed7pa",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUqrMiDLLcCwOTjZPCTIxKcoxDimqzDSON6tML_CvNAlxVtJB1ZeXWlEC1KavVAsArBkcbA:1w0DRQ:DSZjBK3Qvc30gRQZKSXYxrK21AdOSqOnxo-OmDe7sVA",
+        "expire_date": "2026-03-12T06:53:12.705Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bxjm5pnxuzqmi9l49cr08lj97vq5f2oi",
+    "fields": {
+        "session_data": ".eJxdjMkKwjAURf8la61Jh7zg0qELJ9CFiJvy0rwOKg00EUTx323Fhbq9557zYBlefZVdHbVZbdiYARt8bxrzMzU9MCdsShvktvFtrYP-EnyoC9bW0GXy-f4EKnRVZ4dIBS-QkhzQcCm50FqCEjpScSgkGDCF4jEoRQJBRmBEkoRAJGLKI91HS2vLC2X23XYePXVdcV_fqsN2ODumd671cleU08htVjW6-SJt9_9eQzffaSP2fAHAzlNB:1vzwhd:vLjEbjfSMcjBC_9ZL6b75n7ryZfQlEy-XuFBmDyx2qg",
+        "expire_date": "2026-03-11T13:00:49.083Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cvgz5ahp7snqunbfviybiec1hm8bnql5",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUqqqyix0cfbyy_ZKT_JzKvQN8HYLSA12zSjwTDS1MDGoUNJB1ZeXWlEC1KavVAsAp5gcIg:1vzkOj:G1brGkLLErbwAeuoWNxwpKWrXtZNUuzZtgBgrof9ByQ",
+        "expire_date": "2026-03-23T23:52:29.975Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eav1gw96mqvrv0vchbhqfd4eudpr677u",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vpMsO:1zAONzJmdwGb0dP7TDBg8ljed2tn5X4s_dOY6wZvnCk",
+        "expire_date": "2026-02-23T08:44:12.380Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "evpg0cpspp2ugwccg5kb86riikoygdkb",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vXfcT:F9PsNcSPMV92990K579SGuTxzOrl5HxXhCPz_frzDsU",
+        "expire_date": "2026-01-05T13:06:37.419Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gici3dbxtw4audxlzurnjso25e7womgr",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vzoMT:eEO62OAIOVVlrLiqCX0FgNZxIiur2SqDMi8OqdpjrtY",
+        "expire_date": "2026-03-11T04:06:25.341Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hrm5f66wrie015p4lm94kz6rtmhtmx6r",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUjJMyq8yyHVN83PxMXLydPT1LTUsrEgJ9XCv9NN19UnMVdJB1ZeXWlEC1KavVAsAkE8b1A:1w9yr3:DXq4k7mrlrQHjgVXfsu7ZP1ybp9OvvGV9K8FNtc9Gs0",
+        "expire_date": "2026-04-08T05:20:01.782Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i0go09b2h9kka5cft9uc61biougzeema",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUkoKM0pLzSj29QjI0zWNqMrJtywrSYo3KLOsSnQ28fJMU9JB1ZeXWlEC1KavVAsArYYccA:1vzkOd:Caht0JIcr7039XrvD9hffwzDarD1EVERN3Y-4-ZcI0w",
+        "expire_date": "2026-03-23T23:52:23.765Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i9wzvpt544tedwv58prvotcm1h844qpz",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUjIKy6xI97cwSPFPCXcxCrZIK3UMLnCq8E4NdHfP88tPV9JB1ZeXWlEC1KavVAsAmfwcIA:1vzkOi:gMBqlwzwK9I1P6ECNNwtUL2i3SC_dYsEyG4Ry7-oLFs",
+        "expire_date": "2026-03-23T23:52:28.194Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "irqbl7qhgxb4757ge0xcam81ekk82bk9",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vzvji:x37EijDEXWDJg3TpNz22BTrKN-_X6kAHC_QEGiU_npM",
+        "expire_date": "2026-03-11T11:58:54.251Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jo81eylqy6t9ey9gkb82txlov6n7xjj6",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1w0Eza:Jyf57qlIY220HmK7FAEKCHqxefdWBcajHuEjnIwnUa8",
+        "expire_date": "2026-03-12T08:32:34.544Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jr45idkmxl6n13awdp47ykpmt28xgyo1",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvJwTPcNrnJL8Q8uNi3zczQOjjAvKHJM8k5OdvQyNElzUtJB1ZeXWlEC1KavVAsAkI0btg:1vzkOn:URIiPFDupll-SLP0nabzxMGdTEkpN3ZWO6qa_UTNl-c",
+        "expire_date": "2026-03-23T23:52:33.083Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kn8lv2yfvi6jjni6xhecpppd5zj4znlk",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUkosKPL1zojP9HEydw7OcEpLLwioDEwMi8_P8En0Nc5KU9JB1ZeXWlEC1KavVAsAuTkcwQ:1vzkOd:9DXX1D_1o37ZipYaPfMLRGgJ5XifkOdowebI15o3z1k",
+        "expire_date": "2026-03-23T23:52:23.755Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ldqz99a7phf8vq4ctsq3wgbcltmgp7g7",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUgpP9EwOSCvK8w0wKzRwzg6zKExLdvcIdSqPqkrzyo9MV9JB1ZeXWlEC1KavVAsAsTUcpA:1vzkOg:sLDGxSjhOCPuNll9L3iusSLtyB69OeVjYV78zlufCY8",
+        "expire_date": "2026-03-23T23:52:26.589Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lfy0gptst22y7wbcwgnsqnrnbdimi2du",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUnLy9_IySIswznLKMnYq9bcoNcywMAt0dnMqdgtNC3YJV9JB1ZeXWlEC1KavVAsAdRcbNw:1vzkOm:1wetRBxNMyA2ME3XNIUmYh0P7APKcCv3aTWAs7gWSQI",
+        "expire_date": "2026-03-23T23:52:32.424Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m18dz0vo0gabjq1om4b1aoc2xj4t1ur8",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUsoqzzZNjTByTfYLCrQ0S8_wDihPTbd0LrPIcHSM8CoOUNJB1ZeXWlEC1KavVAsAnPAcDg:1vzkOd:zmH608xflYQmaIvvBxFPZX9UDc5BIAQEZZSJhY7UhxM",
+        "expire_date": "2026-03-23T23:52:23.803Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "n0hxxsdvn07s3zj6ef1gk207afnt1d18",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUgq3THMqCTf0NQosM0h1jywNKy5Ncc4LDSt0q_LzzIgKUtJB1ZeXWlEC1KavVAsApaocbg:1vzvTN:xccb2kjCHlPlG7EM7mcAZVJjvGfJBT6ycE51rNJW9uQ",
+        "expire_date": "2026-03-11T11:42:02.006Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o3rqsfx4dy9kxhv3owggdq89cc7lbu1e",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vzvjk:-p6DTfJqBmzQyR5T-rHRLI7xmWMlKc4lFzyLjVgeQiw",
+        "expire_date": "2026-03-11T11:58:56.064Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o6zyqaqw7d6ytzpxswjt6icub3sjj58f",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vlhtZ:8SfOSVyzRoBgP6tnvbmYcMpXov2tXf70202zyXKVyf4",
+        "expire_date": "2026-02-13T06:22:17.626Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "oessgram2n8wk3hkaq7bco8k2ql42fqh",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvKuSvTwNS8oDPZ3t0wvdPIsznI2jMwP9yjMzzFyM052UdJB1ZeXWlEC1KavVAsAoNccHg:1vzkOo:OgGzH8FXsnaR8nxZ9MM0bbpYE0Vkam9oyvCQxVEAv58",
+        "expire_date": "2026-03-23T23:52:34.460Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ok6ekga325ypb4x0qrbed20ljioptp6a",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAY2kFduu8ZyAwMtmogKe3KeHdD0oVu_3vvv1WgfZvD3mQNS1JXZY06_Y5M8Smlk_Sgcq861rKtC-uu6IM2PdUkr9vh_h3M1OZey-DPBiQyMguiGdh4yj5Zx5dIIi4hgyEgyDiC85DJecTRDSyWQH2-JFk4dg:1vnJ0C:YewCNsydT7StfhOC4vTjRzesWCSYYbzkSLbMT8mI-o0",
+        "expire_date": "2026-02-17T16:11:44.209Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "phpeir5ts7h27khrfzj4de3ruk9q125y",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUnIuyCkrzI5K9Q2oKjRJTAvJK_EoKgzyzQ_093HO9MoxVNJB1ZeXWlEC1KavVAsAzaUdEQ:1vzoFK:azljGtkN7GaQNDdp-q1nLJ4rbnJFewywh0QXqKYzNgY",
+        "expire_date": "2026-03-11T03:59:02.908Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q2svowjb2p4zo1os8o6jqwwfnz2on94x",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1voRRZ:jk_YH9WVTPMCtoagkaozNWynWBaFgCPTZny82zlkedQ",
+        "expire_date": "2026-02-20T19:24:41.847Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ri141aeb1epo5zjwq78o3ub00bk6mems",
+    "fields": {
+        "session_data": ".eJxVjM1qg0AURt9l1sE4_swduiylUNpCUqRN3cgd71WTyExwxpJQ-u7R4sbtOd_5fkXrXNtz5XAMXeUDBhYP4knun2_BvhafRXk5H8L321e5-3mxDYz2gzIvNuvO8jVM2Xbi1T8YPQ_VkSYGa2awPrOdBZ3Qti6qnQ3D0UTzJFqsj94dcf-4bFcHHfpuqhPkJm6Q8xqQYqViaYwCLU2qs0QqIKBGxxlozRJBpUAyzxNglhnXqSHxdwc_71Pb:1w5nfZ:VbqnI8Ga1-TEy5pcy1Xxpvt4BKj9vv0v9G8KqVUE-XI",
+        "expire_date": "2026-03-27T16:34:53.602Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rmoyy7u8wjalp91118rcqcdhbzsl8j9h",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUvJ1DkwqTc7NiUwqKoqojCz39fHOToqKLwvz9yiKT80IVtJB1ZeXWlEC1KavVAsA09MdYg:1vzkOd:RX-xXJ4kUObSnIpe5fuzlBs5dfSXJzjnt55iGmS5d4g",
+        "expire_date": "2026-03-23T23:52:23.789Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ryav0lnourei6v0xraf7w23nwgznnjw3",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUqoKzszTtShINPMKqIgPyHPxSQkvNLTM83ey9C0vC_fRVdJB1ZeXWlEC1KavVAsAoRwcFw:1vzkOk:tsaOzhh378tqXbWGkdNTR9HUOusJ9Zo0OCSs1mLs_eY",
+        "expire_date": "2026-03-23T23:52:30.541Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tg82tx9c3sr6bss10yfi7tj4ycdiz48e",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUnIxyUmKzNc1jTerSkqvLCgt8_OuDC7yzvYKyi3OsywwU9JB1ZeXWlEC1KavVAsAutUc4g:1vzkOd:1Hq0ab1spkolfRyQRo05sEmlpDCxJ_HPvUqc-3SUpIE",
+        "expire_date": "2026-03-23T23:52:23.767Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u5g0t24jzbkae5d3nfeykygwl43uk3ov",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUspy03VyccnIdfPyTCkrTK2wdPENjrAIdgxIDfD0CqwMVtJB1ZeXWlEC1KavVAsAkl0b4w:1vzkOo:przZtmOsbuWo9kpICmWragAS4_3F7VtkPIZuUBtBvhc",
+        "expire_date": "2026-03-23T23:52:34.799Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uaxu6xxo126nkt2zxy1lt7b5m3mmid0a",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUjL2Lfd1colP9A0zz60qSHVLTcquTPf3t_QydauyyCrMU9JB1ZeXWlEC1KavVAsAqj8cfw:1vzpXB:gr0C14tBQkKKQDFxEELMhKfEyeqE9xIcIklSgm79WVo",
+        "expire_date": "2026-03-11T05:21:33.648Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wy7wd4v9vghuur3ibyvvcbie9q8bpprv",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUirJ8srxMnC3LDHPCTXy8o4oNDUyd_TMy3fMSykrLK5KVNJB1ZeXWlEC1KavVAsAnN4cRw:1vzkOj:P0gL38gWFTdPQ4y3Y701_QQxQZjhJD8BQA21NMfVtk4",
+        "expire_date": "2026-03-23T23:52:29.090Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xp8ug5y30381e2p1g9z8h5qwv4zapu27",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQBf-FsyFAYQGP3v0GssAiVQNJaU_Gf9cmPej1zcx7sYDbWsM2aAlzZmem2Ol3i5ge1HaQ79hunafe1mWOfFf4QQe_9kzPy-H-HVQc9VvLDEpnmwkTlCKESRoAlBeKrEjOWYxI1kECYwREg9YW7Uk68n6atGTvD-DIN1o:1upg3X:kjeldRLXh67nrCOtOW2WOyRnQpL43VVVLT_5oJ6sZ5o",
+        "expire_date": "2025-09-06T04:40:43.041Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y9dix7m9av623h7v7gxq2pg5m1h3olsd",
+    "fields": {
+        "session_data": ".eJxdjMsKwjAQRf8la6lJH5ng0o2gFVyI0lWZSaYPLQ3YiIL477biQt3ec895iBKvoSmvA1_K1omFADH73gjtmfsJuBP2tY-s78OlpWi6RB86RFvvuFt-vj-BBodmtGPkSlbImQV0UmupiDQYRYlJY6XBgauMTMEYVgg6AaeyLAZmlbJNaIrW3tcdl_7dHgIGHrvWF8dYrtct5bDRt2JXdGS0o0Mu89V2s__3er6HUZuL5wum5FKN:1w0EvO:lm6Ct2DEs5aM6WycVYj_6fY_BGQ4HjMkGVEHfDUCpR4",
+        "expire_date": "2026-03-12T08:28:14.623Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yfo65q0abno8c4a8dtlarmydxrn7vs9p",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUsop9TMMrswrjjJzDvH29SisKnAvL_Hzdi4ySstLSox3VdJB1ZeXWlEC1KavVAsAu2sczA:1vzkOd:ys55CBV_I69TT6T5PrcAbvbmr1Blv38s_mCuRg0nICk",
+        "expire_date": "2026-03-23T23:52:23.797Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ym3n205y4hmegzy6njxh84bil4o9aa4u",
+    "fields": {
+        "session_data": ".eJyrVkrPz0_PSY3PTywtyYgvLkksSVWyUgp2TgkI9XU3K4-KLI33DPcMsDA0zDSJKo4Myy_SLQhKU9JB1ZeXWlEC1KavVAsAlJ4b-Q:1vzkOe:-5x4NsPMI1u8zFHHdgvcOG15fAT96KhO2hJmiLCxHdU",
+        "expire_date": "2026-03-23T23:52:24.887Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zl3rnyg3henisk2dcl13wnn8p19k26pp",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgwBCX7j0DGZhBqgaS0q6Md9cmXej2v_f-S0Tc1hq3wUucSZwFiNPvljA_uO2A7thuXebe1mVOclfkQYe8duLn5XD_DiqO-q0NclEF2WVAUt4rnZKHoNMUrNEeCKgEZSEE1gh-AtLOGWDWlvOUSLw_7J431w:1vzoMa:R_ViYRJq_7k2BHdVjCffR8ZWuT1wkMecljFf5ldvqU8",
+        "expire_date": "2026-03-11T04:06:32.138Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "099bf82b880e4f3a652f3904c18b68cc5973bf04",
+    "fields": {
+        "user": [
+            "nageshpawar577"
+        ],
+        "created": "2026-04-07T05:21:22.083Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "0f0cd0b5710555142641e17980264564edfb65d9",
+    "fields": {
+        "user": [
+            "thesilentkiller0008"
+        ],
+        "created": "2026-03-11T08:02:36.840Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "1b794d656972ae8afd701dbfb1cbecb15c74178a",
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "created": "2026-04-08T06:17:29.048Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "2d0dd09cc593f7679cfc628c91734dfd392948f9",
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "created": "2025-08-25T07:09:57.857Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "499852c7a2a2c333ef26eae042dcf46fc3926e99",
+    "fields": {
+        "user": [
+            "Girish"
+        ],
+        "created": "2025-08-26T15:25:46.284Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "5f888ba2e6b953c9ad490c6f7ee49bebfb9688ef",
+    "fields": {
+        "user": [
+            "zk07"
+        ],
+        "created": "2026-04-08T08:56:42.680Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "91f031287902f5f613e47f15669977b96c29e078",
+    "fields": {
+        "user": [
+            "zk"
+        ],
+        "created": "2026-04-08T08:53:29.858Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "c309aa5078466a166396c3a6eec86a1dbb453d23",
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "created": "2026-03-10T00:07:20.725Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "cb647fff57cfc4c51c554c88ee2e65edfb56f8de",
+    "fields": {
+        "user": [
+            "zx"
+        ],
+        "created": "2026-04-11T03:05:09.307Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "d0d20c2d15631be173f62337ffc761f5f5116302",
+    "fields": {
+        "user": [
+            "girishpawar1512@gmail.com"
+        ],
+        "created": "2026-04-07T16:41:25.964Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "ef5a16ca098d2a6752b3a0f95fd1107ede95fb14",
+    "fields": {
+        "user": [
+            "ziyankazi007"
+        ],
+        "created": "2026-03-10T13:00:57.191Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "fb8c6655275fcc80eceb29fe5515cfa1838c85c5",
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "created": "2026-04-08T10:21:13.880Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 25,
+    "fields": {
+        "make": "BMW",
+        "model": "M7 bs6",
+        "year": 2019,
+        "km": 50000,
+        "fuel": "Petrol",
+        "trans": "Automatic",
+        "price": 300000,
+        "original_predicted_price": 300000,
+        "location": "pandharpur",
+        "img": "http://localhost:8000/media/uploads/1773146358_download%20(1).jpeg",
+        "status": "approved",
+        "approved_at": null,
+        "approved_by": null,
+        "admin_notes": "Owner: Rohit Jagdale\nMobile: 9623141214\nWhatsApp: 9623141214\nCity: Pandharpur\n\nRegistration Number: MH1ḌP5259\nRegistration Year: 2020\nManufacturing Year: 2019\nRegistration State: Maharashtra\n\nBrand: BMW\nModel: M7\nVariant: bs6\nKilometers Driven: 50,000 km\nFuel Type: Petrol\nTransmission: Automatic\nOwner Serial: 1st Owner\nColor: White\n\nExpected Price: ₹300,000\nLocation: pandharpur\nHeard About Us From: Newspaper/Magazine\n\nAdditional Details:\nno",
+        "description": "",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-03-10T12:39:21.856Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 26,
+    "fields": {
+        "make": "suzuki",
+        "model": "swift zxi",
+        "year": 2018,
+        "km": 45000,
+        "fuel": "Petrol",
+        "trans": "Automatic",
+        "price": 352000,
+        "original_predicted_price": 320000,
+        "location": "pune",
+        "img": "http://localhost:8000/media/uploads/1773147588_download%20(2).jpeg",
+        "status": "approved",
+        "approved_at": "2026-03-10T13:05:55.890Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Ziyan Kazi\nMobile: 9623141214\nWhatsApp: 9623141214\nCity: pune\n\nRegistration Number: MH1ḌP5259\nRegistration Year: 1980\nManufacturing Year: 2018\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: swift\nVariant: zxi\nKilometers Driven: 45,000 km\nFuel Type: Petrol\nTransmission: Automatic\nOwner Serial: 1st Owner\nColor: White\n\nExpected Price: ₹320,000\nLocation: pune\nHeard About Us From: Facebook\n\nAdditional Details:\ngood maintained",
+        "description": "",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-03-10T13:00:11.436Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 27,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno sx",
+        "year": 2022,
+        "km": 4300,
+        "fuel": "Petrol",
+        "trans": "Manual",
+        "price": 330000,
+        "original_predicted_price": 300000,
+        "location": "pandharpur",
+        "img": "http://localhost:8000/media/uploads/1773180983_download%20(2).jpeg",
+        "status": "approved",
+        "approved_at": "2026-03-10T22:18:03.528Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: pandharpur\n\nRegistration Number: MH45AL2405\nRegistration Year: 2023\nManufacturing Year: 2022\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: baleno\nVariant: sx\nKilometers Driven: 4,300 km\nFuel Type: Petrol\nTransmission: Manual\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹300,000\nLocation: pandharpur\nHeard About Us From: Google Search\n\nAdditional Details:",
+        "description": "",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-03-10T22:16:52.585Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 28,
+    "fields": {
+        "make": "suzuki",
+        "model": "swift zxi",
+        "year": 2020,
+        "km": 52000,
+        "fuel": "Petrol",
+        "trans": "Automatic",
+        "price": 454300,
+        "original_predicted_price": 413000,
+        "location": "Paranda",
+        "img": "http://localhost:8000/media/uploads/1773185844_download%20(2).jpeg",
+        "status": "approved",
+        "approved_at": "2026-03-10T23:40:29.230Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: Paranda\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: swift\nVariant: zxi\nKilometers Driven: 52,000 km\nFuel Type: Petrol\nTransmission: Automatic\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹413,000\nLocation: Paranda\nHeard About Us From: Instagram\n\nAdditional Details:\nfcvgbn",
+        "description": "",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-03-10T23:39:19.427Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 29,
+    "fields": {
+        "make": "suzuki",
+        "model": "swift zxi",
+        "year": 2020,
+        "km": 45000,
+        "fuel": "Petrol",
+        "trans": "Manual",
+        "price": 383900,
+        "original_predicted_price": 349000,
+        "location": "pandharpur",
+        "img": "http://localhost:8000/media/uploads/1773217869_download%20(2).jpeg",
+        "status": "approved",
+        "approved_at": "2026-03-11T08:33:09.978Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 7972729806\nWhatsApp: 7972729806\nCity: pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: swift\nVariant: zxi\nKilometers Driven: 45,000 km\nFuel Type: Petrol\nTransmission: Manual\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹349,000\nLocation: pandharpur\nHeard About Us From: Instagram\n\nAdditional Details:",
+        "description": "",
+        "seller": null,
+        "created_at": "2026-03-11T08:31:29.140Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 30,
+    "fields": {
+        "make": "suzuki",
+        "model": "swift zxi",
+        "year": 2020,
+        "km": 45000,
+        "fuel": "Petrol",
+        "trans": "Manual",
+        "price": 383900,
+        "original_predicted_price": 349000,
+        "location": "pandharpur",
+        "img": "http://127.0.0.1:8000/media/uploads/1774274187_download%20(1).jpeg",
+        "status": "approved",
+        "approved_at": "2026-03-23T13:58:14.725Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: swift\nVariant: zxi\nKilometers Driven: 45,000 km\nFuel Type: Petrol\nTransmission: Manual\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹349,000\nLocation: pandharpur\nHeard About Us From: Google Search\n\nAdditional Details:\nfghjk",
+        "description": "",
+        "seller": null,
+        "created_at": "2026-03-23T13:56:45.335Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 31,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno zxi",
+        "year": 2020,
+        "km": 50000,
+        "fuel": "Petrol",
+        "trans": "Automatic",
+        "price": 351000,
+        "original_predicted_price": 351000,
+        "location": "adfarree",
+        "img": "",
+        "status": "rejected",
+        "approved_at": null,
+        "approved_by": null,
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: adfarree\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Gujarat\n\nBrand: suzuki\nModel: baleno\nVariant: zxi\nKilometers Driven: 50,000 km\nFuel Type: Petrol\nTransmission: Automatic\nOwner Serial: 3rd Owner\nColor: white\n\nExpected Price: ₹351,000\nLocation: adfarree\nHeard About Us From: Instagram\n\nAdditional Details:",
+        "description": "",
+        "seller": null,
+        "created_at": "2026-04-07T04:59:31.789Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 32,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno zxi",
+        "year": 2020,
+        "km": 10000,
+        "fuel": "Petrol",
+        "trans": "Automatic",
+        "price": 383000,
+        "original_predicted_price": 383000,
+        "location": "pandharpur",
+        "img": "",
+        "status": "pending",
+        "approved_at": null,
+        "approved_by": null,
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Telangana\n\nBrand: suzuki\nModel: baleno\nVariant: zxi\nKilometers Driven: 10,000 km\nFuel Type: Petrol\nTransmission: Automatic\nOwner Serial: 2nd Owner\nColor: white\n\nExpected Price: ₹383,000\nLocation: pandharpur\nHeard About Us From: Other\n\nAdditional Details:",
+        "description": "",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-04-08T02:48:32.716Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 33,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno zxi",
+        "year": 2020,
+        "km": 10000,
+        "fuel": "Petrol",
+        "trans": "Manual",
+        "price": 386100,
+        "original_predicted_price": 351000,
+        "location": "pandharpur",
+        "img": "http://127.0.0.1:8000/media/uploads/1775643915_Baleno%202020.webp",
+        "status": "approved",
+        "approved_at": "2026-04-08T10:29:36.911Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Amey Bhatavande\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: baleno\nVariant: zxi\nKilometers Driven: 10,000 km\nFuel Type: Petrol\nTransmission: Manual\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹351,000\nLocation: pandharpur\nHeard About Us From: Friend/Family Referral\n\nAdditional Details:\nGood doctor driven car",
+        "description": "",
+        "seller": null,
+        "created_at": "2026-04-08T10:25:56.885Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 34,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno zxi",
+        "year": 2020,
+        "km": 50000,
+        "fuel": "Hybrid",
+        "trans": "AMT",
+        "price": 550000,
+        "original_predicted_price": 500000,
+        "location": "Pandharpur",
+        "img": "",
+        "status": "approved",
+        "approved_at": "2026-04-11T04:00:15.999Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: Pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: baleno\nVariant: zxi\nKilometers Driven: 50,000 km\nFuel Type: Hybrid\nTransmission: AMT\nOwner Serial: 1st Owner\nColor: white\n\nExpected Price: ₹500,000\nLocation: Pandharpur\nHeard About Us From: YouTube\n\nAdditional Details:\ngood doctor driven well maintained car",
+        "description": "",
+        "seller": null,
+        "created_at": "2026-04-11T03:59:30.158Z"
+    }
+},
+{
+    "model": "core.listing",
+    "pk": 35,
+    "fields": {
+        "make": "suzuki",
+        "model": "baleno zxi",
+        "year": 2020,
+        "km": 500000,
+        "fuel": "Diesel",
+        "trans": "Automatic",
+        "price": 550000,
+        "original_predicted_price": 500000,
+        "location": "Pandharpur",
+        "img": "",
+        "status": "approved",
+        "approved_at": "2026-04-11T04:10:42.529Z",
+        "approved_by": [
+            "autoproeliteshop"
+        ],
+        "admin_notes": "Owner: Girish Pawar\nMobile: 9420653589\nWhatsApp: 9420653589\nCity: Pandharpur\n\nRegistration Number: MH45AL2407\nRegistration Year: 2020\nManufacturing Year: 2020\nRegistration State: Maharashtra\n\nBrand: suzuki\nModel: baleno\nVariant: zxi\nKilometers Driven: 500,000 km\nFuel Type: Diesel\nTransmission: Automatic\nOwner Serial: 2nd Owner\nColor: Black\n\nExpected Price: ₹500,000\nLocation: Pandharpur\nHeard About Us From: Google Search\n\nAdditional Details:\ngood wel maintained doctor driven car",
+        "description": "good wel maintained doctor driven car",
+        "seller": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-04-11T04:10:22.468Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 3,
+    "fields": {
+        "listing": 25,
+        "image_url": "http://localhost:8000/media/uploads/1773146358_download%20(1).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-10T12:39:21.879Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 4,
+    "fields": {
+        "listing": 26,
+        "image_url": "http://localhost:8000/media/uploads/1773147588_download%20(2).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-10T13:00:11.463Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 5,
+    "fields": {
+        "listing": 27,
+        "image_url": "http://localhost:8000/media/uploads/1773180983_download%20(2).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-10T22:16:52.607Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 6,
+    "fields": {
+        "listing": 28,
+        "image_url": "http://localhost:8000/media/uploads/1773185844_download%20(2).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-10T23:39:19.457Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 7,
+    "fields": {
+        "listing": 29,
+        "image_url": "http://localhost:8000/media/uploads/1773217869_download%20(2).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-11T08:31:29.177Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 8,
+    "fields": {
+        "listing": 30,
+        "image_url": "http://127.0.0.1:8000/media/uploads/1774274187_download%20(1).jpeg",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-03-23T13:56:45.387Z"
+    }
+},
+{
+    "model": "core.listingimage",
+    "pk": 9,
+    "fields": {
+        "listing": 33,
+        "image_url": "http://127.0.0.1:8000/media/uploads/1775643915_Baleno%202020.webp",
+        "caption": "",
+        "order": 0,
+        "created_at": "2026-04-08T10:25:56.911Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 9,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "amanpathan23122006@gmail.com",
+        "subject": "Test Drive Booking - suzuki baleno zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki baleno zxi 2020\n- Price: ₹590700\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9063251578\n- Email: amanpathan23122006@gmail.com\n- City: solapur\n\nPreferred Schedule:\n- Date: 2026-04-04\n- Time: 09:00-10:00\n\nAdditional Message:\n\n\nBooking Date: 2026-03-09T23:01:22.873Z",
+        "created_at": "2026-03-09T23:01:22.903Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 10,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki baleno zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki baleno zxi 2020\n- Price: ₹590700\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9063251578\n- Email: girishpawar1512@gmail.com\n- City: solapur\n\nPreferred Schedule:\n- Date: 2026-04-04\n- Time: 09:00-10:00\n\nAdditional Message:\n\n\nBooking Date: 2026-03-09T23:04:21.963Z",
+        "created_at": "2026-03-09T23:04:22.020Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 11,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki baleno zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki baleno zxi 2020\n- Price: ₹590700\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9063251578\n- Email: girishpawar1512@gmail.com\n- City: solapur\n\nPreferred Schedule:\n- Date: 2026-04-04\n- Time: 09:00-10:00\n\nAdditional Message:\n\n\nBooking Date: 2026-03-09T23:04:24.537Z",
+        "created_at": "2026-03-09T23:04:24.550Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 12,
+    "fields": {
+        "name": "Aman",
+        "email": "akthe4617@gmail.com",
+        "subject": "Service Booking - Marythi swift (Damage Repair)",
+        "message": "Service/Repair Slot Booking\n\nVehicle Details:\n- Make: Marythi\n- Model: swift\n- Year: 2026\n- Registration: mh14as2334\n\nCustomer Details:\n- Name: Aman\n- Phone: 9096235689\n- Email: akthe4617@gmail.com\n- City: Pune\n\nService Details:\n- Service Type: Damage Repair\n- Preferred Date: 2029-10-10\n- Preferred Time: 09:00-10:00\n\nDetected Damages/Issues:\n  - No specific damage detected\n\nAdditional Details:\ni want to repair my car\n\nBooking Date: 2026-03-10T11:46:20.499Z",
+        "created_at": "2026-03-10T11:46:20.526Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 13,
+    "fields": {
+        "name": "Ziyan Kazi",
+        "email": "ziyankazi007@gmail.com",
+        "subject": "Service Booking - Maruthi swift (Other)",
+        "message": "Service/Repair Slot Booking\n\nVehicle Details:\n- Make: Maruthi\n- Model: swift\n- Year: 2020\n- Registration: mh15as1111\n\nCustomer Details:\n- Name: Ziyan Kazi\n- Phone: 9096362514\n- Email: ziyankazi007@gmail.com\n- City: Pune\n\nService Details:\n- Service Type: Other\n- Preferred Date: 2026-10-10\n- Preferred Time: 11:00-12:00\n\nDetected Damages/Issues:\n  - Dent (93% confidence)\n  - Dent (66% confidence)\n  - Broken Light (74% confidence)\n  - Scratch (63% confidence)\n  - Scratch (72% confidence)\n\nAdditional Details:\nheadlight \n\nBooking Date: 2026-03-10T11:49:38.125Z",
+        "created_at": "2026-03-10T11:49:38.142Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 14,
+    "fields": {
+        "name": "Ziyan Kazi",
+        "email": "ziyankazi007@gmail.com",
+        "subject": "Service Booking - Maruthi swift (Other)",
+        "message": "Service/Repair Slot Booking\n\nVehicle Details:\n- Make: Maruthi\n- Model: swift\n- Year: 2020\n- Registration: mh15as1111\n\nCustomer Details:\n- Name: Ziyan Kazi\n- Phone: 9096362514\n- Email: ziyankazi007@gmail.com\n- City: Pune\n\nService Details:\n- Service Type: Other\n- Preferred Date: 2026-10-10\n- Preferred Time: 11:00-12:00\n\nDetected Damages/Issues:\n  - Dent (93% confidence)\n  - Dent (66% confidence)\n  - Broken Light (74% confidence)\n  - Scratch (63% confidence)\n  - Scratch (72% confidence)\n\nAdditional Details:\nheadlight \n\nBooking Date: 2026-03-10T11:49:40.509Z",
+        "created_at": "2026-03-10T11:49:40.524Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 15,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "amanpathan23122006@gmail.com",
+        "subject": "Test Drive Booking - suzuki swift zxi 2018",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki swift zxi 2018\n- Price: ₹352000\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9063251578\n- Email: amanpathan23122006@gmail.com\n- City: solapur\n\nPreferred Schedule:\n- Date: 2026-03-20\n- Time: 10:00-11:00\n\nAdditional Message:\nxcv bnm,\n\nBooking Date: 2026-03-10T18:34:31.520Z",
+        "created_at": "2026-03-10T18:34:31.538Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 16,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "amanpathan23122006@gmail.com",
+        "subject": "Service Booking - honda swift (Damage Repair)",
+        "message": "Service/Repair Slot Booking\n\nVehicle Details:\n- Make: honda\n- Model: swift\n- Year: 2019\n- Registration: 2020\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9696969696\n- Email: amanpathan23122006@gmail.com\n- City: Pune\n\nService Details:\n- Service Type: Damage Repair\n- Preferred Date: 2026-03-25\n- Preferred Time: 15:00-16:00\n\nDetected Damages/Issues:\n  - No specific damage detected\n\nAdditional Details:\ndfg\n\nBooking Date: 2026-03-10T18:36:21.022Z",
+        "created_at": "2026-03-10T18:36:21.036Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 17,
+    "fields": {
+        "name": "Girish Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki swift zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki swift zxi 2020\n- Price: ₹454300\n\nCustomer Details:\n- Name: Girish Pawar\n- Phone: 9420653589\n- Email: girishpawar1512@gmail.com\n- City: pandharpur\n\nPreferred Schedule:\n- Date: 2026-03-13\n- Time: 10:00-11:00\n\nAdditional Message:\nzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n\nBooking Date: 2026-03-11T00:22:51.678Z",
+        "created_at": "2026-03-11T00:22:51.773Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 18,
+    "fields": {
+        "name": "Aman Pathan",
+        "email": "amanpathan23122006@gmail.com",
+        "subject": "Service Booking - maruti swift (Damage Repair)",
+        "message": "Service/Repair Slot Booking\n\nVehicle Details:\n- Make: maruti\n- Model: swift\n- Year: 2020\n- Registration: MH 24 HN 2552\n\nCustomer Details:\n- Name: Aman Pathan\n- Phone: 9696969696\n- Email: amanpathan23122006@gmail.com\n- City: Pune\n\nService Details:\n- Service Type: Damage Repair\n- Preferred Date: 2026-03-12\n- Preferred Time: 09:00-10:00\n\nDetected Damages/Issues:\n  - Broken Light (91% confidence)\n  - Paint Chip (79% confidence)\n  - Broken Light (87% confidence)\n\nAdditional Details:\nhiu\n\nBooking Date: 2026-03-11T07:05:18.674Z",
+        "created_at": "2026-03-11T07:05:18.708Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 19,
+    "fields": {
+        "name": "Girish Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki swift zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki swift zxi 2020\n- Price: ₹383900\n\nCustomer Details:\n- Name: Girish Pawar\n- Phone: 9420653589\n- Email: girishpawar1512@gmail.com\n- City: pandharpur\n\nPreferred Schedule:\n- Date: 2026-05-25\n- Time: 14:00-15:00\n\nAdditional Message:\n\n\nBooking Date: 2026-03-23T14:00:20.594Z",
+        "created_at": "2026-03-23T14:00:20.607Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 20,
+    "fields": {
+        "name": "Girish Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki swift zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki swift zxi 2020\n- Price: ₹383900\n\nCustomer Details:\n- Name: Girish Pawar\n- Phone: 9420653589\n- Email: girishpawar1512@gmail.com\n- City: pandharpur\n\nPreferred Schedule:\n- Date: 2026-05-25\n- Time: 14:00-15:00\n\nAdditional Message:\n\n\nBooking Date: 2026-03-23T14:00:30.576Z",
+        "created_at": "2026-03-23T14:00:30.586Z"
+    }
+},
+{
+    "model": "core.contactmessage",
+    "pk": 21,
+    "fields": {
+        "name": "Girish Pawar",
+        "email": "girishpawar1512@gmail.com",
+        "subject": "Test Drive Booking - suzuki baleno zxi 2020",
+        "message": "Test Drive Booking Request\n\nCar Details:\n- Car: suzuki baleno zxi 2020\n- Price: ₹386100\n\nCustomer Details:\n- Name: Girish Pawar\n- Phone: 9420653589\n- Email: girishpawar1512@gmail.com\n- City: pandharpur\n\nPreferred Schedule:\n- Date: 2026-04-12\n- Time: 10:00-11:00\n\nAdditional Message:\n\n\nBooking Date: 2026-04-08T10:32:20.613Z",
+        "created_at": "2026-04-08T10:32:20.631Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 189,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: BMW M7 bs6",
+        "metadata": {
+            "listing_id": 25,
+            "registration_number": "MH1ḌP5259",
+            "price": 300000,
+            "owner_name": "Rohit Jagdale",
+            "mobile": "9623141214"
+        },
+        "created_at": "2026-03-10T12:39:21.898Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 190,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: suzuki swift zxi",
+        "metadata": {
+            "listing_id": 26,
+            "registration_number": "MH1ḌP5259",
+            "price": 320000,
+            "owner_name": "Ziyan Kazi",
+            "mobile": "9623141214"
+        },
+        "created_at": "2026-03-10T13:00:11.487Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 191,
+    "fields": {
+        "user": [
+            "ziyankazi007"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-10T13:00:57.214Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 192,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-03-10T13:05:02.901Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 193,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-10T18:58:26.504Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 194,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-10T19:42:48.895Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 195,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-10T20:34:01.323Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 196,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-10T20:34:07.291Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 197,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: suzuki baleno sx",
+        "metadata": {
+            "listing_id": 27,
+            "registration_number": "MH45AL2405",
+            "price": 300000,
+            "owner_name": "Girish Pawar",
+            "mobile": "9420653589"
+        },
+        "created_at": "2026-03-10T22:16:52.629Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 198,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: suzuki swift zxi",
+        "metadata": {
+            "listing_id": 28,
+            "registration_number": "MH45AL2407",
+            "price": 413000,
+            "owner_name": "Girish Pawar",
+            "mobile": "9420653589"
+        },
+        "created_at": "2026-03-10T23:39:19.482Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 199,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-03-10T23:39:42.917Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 200,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-03-11T00:00:32.469Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 201,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Booked test drive for suzuki swift zxi 2020",
+        "metadata": null,
+        "created_at": "2026-03-11T00:22:56.642Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 202,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-03-11T00:24:10.062Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 203,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-03-11T00:28:14.169Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 204,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created order #31 with COD and generated e-bill",
+        "metadata": {
+            "order_id": 31,
+            "payment_method": "cod",
+            "total_amount": 935.0,
+            "items_count": 1,
+            "bill_number": "APE-20260311-000031",
+            "email_sent": true
+        },
+        "created_at": "2026-03-11T00:28:40.246Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 205,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-11T06:53:19.103Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 206,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "action": "create",
+        "description": "Booked service slot for maruti swift",
+        "metadata": null,
+        "created_at": "2026-03-11T07:05:25.494Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 207,
+    "fields": {
+        "user": [
+            "thesilentkiller0008"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-11T08:02:36.859Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 208,
+    "fields": {
+        "user": [
+            "thesilentkiller0008"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-11T08:28:20.857Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 209,
+    "fields": {
+        "user": [
+            "thesilentkiller0008"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-11T08:28:25.007Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 210,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-03-23T13:57:17.937Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 211,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Booked test drive for suzuki swift zxi 2020",
+        "metadata": null,
+        "created_at": "2026-03-23T14:00:28.537Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 212,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Booked test drive for suzuki swift zxi 2020",
+        "metadata": null,
+        "created_at": "2026-03-23T14:00:46.866Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 213,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-03-26T15:51:33.145Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 214,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-03-26T16:34:39.999Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 215,
+    "fields": {
+        "user": [
+            "nageshpawar577"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-04-07T05:21:22.097Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 216,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: suzuki baleno zxi",
+        "metadata": {
+            "listing_id": 32,
+            "registration_number": "MH45AL2407",
+            "price": 383000,
+            "owner_name": "Girish Pawar",
+            "mobile": "9420653589"
+        },
+        "created_at": "2026-04-08T02:48:32.747Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 217,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-04-08T06:20:18.198Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 218,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "action": "create",
+        "description": "Created order #32 with COD and generated e-bill",
+        "metadata": {
+            "order_id": 32,
+            "payment_method": "cod",
+            "total_amount": 345.0,
+            "items_count": 1,
+            "bill_number": "APE-20260408-000032",
+            "email_sent": true
+        },
+        "created_at": "2026-04-08T06:20:50.162Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 219,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "action": "update",
+        "description": "Resent e-bill email for order #32",
+        "metadata": {
+            "order_id": 32,
+            "bill_number": "APE-20260408-000032"
+        },
+        "created_at": "2026-04-08T06:21:02.196Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 220,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-04-08T06:23:47.279Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 221,
+    "fields": {
+        "user": [
+            "ziyankazi007"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-04-08T06:24:12.596Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 222,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "action": "login",
+        "description": "User logged in",
+        "metadata": null,
+        "created_at": "2026-04-08T08:57:34.625Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 223,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "action": "create",
+        "description": "Booked test drive for suzuki baleno zxi 2020",
+        "metadata": {
+            "car_id": 33,
+            "car_name": "suzuki baleno zxi 2020",
+            "preferred_date": "2026-04-12",
+            "preferred_time": "10:00-11:00"
+        },
+        "created_at": "2026-04-08T10:32:25.900Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 224,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "action": "create",
+        "description": "Booked test drive for suzuki baleno zxi 2020",
+        "metadata": null,
+        "created_at": "2026-04-08T10:32:25.952Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 225,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-04-08T10:34:03.160Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 226,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "action": "create",
+        "description": "Created order #33 with COD and generated e-bill",
+        "metadata": {
+            "order_id": 33,
+            "payment_method": "cod",
+            "total_amount": 345.0,
+            "items_count": 1,
+            "bill_number": "APE-20260408-000033",
+            "email_sent": true
+        },
+        "created_at": "2026-04-08T10:34:46.387Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 227,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "action": "view",
+        "description": "Downloaded e-bill for order #33",
+        "metadata": {
+            "order_id": 33,
+            "bill_number": "APE-20260408-000033"
+        },
+        "created_at": "2026-04-08T10:35:11.269Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 228,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "create",
+        "description": "Created car listing: suzuki baleno zxi",
+        "metadata": {
+            "listing_id": 35,
+            "registration_number": "MH45AL2407",
+            "price": 500000,
+            "owner_name": "Girish Pawar",
+            "mobile": "9420653589"
+        },
+        "created_at": "2026-04-11T04:10:22.514Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 229,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "login",
+        "description": "User logged in with Google",
+        "metadata": null,
+        "created_at": "2026-04-11T04:12:32.608Z"
+    }
+},
+{
+    "model": "core.useractivity",
+    "pk": 230,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "action": "add_to_cart",
+        "description": "Added Baterry Belt",
+        "metadata": null,
+        "created_at": "2026-04-11T04:12:55.403Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "created_at": "2026-03-10T00:07:24.562Z",
+        "updated_at": "2026-03-10T00:07:24.562Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "created_at": "2026-03-10T20:34:16.865Z",
+        "updated_at": "2026-03-10T20:34:16.865Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "thesilentkiller0008"
+        ],
+        "created_at": "2026-03-11T08:05:58.447Z",
+        "updated_at": "2026-03-11T08:05:58.447Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "girishpawar1512@gmail.com"
+        ],
+        "created_at": "2026-04-07T16:41:29.209Z",
+        "updated_at": "2026-04-07T16:41:29.209Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "created_at": "2026-04-08T06:17:32.106Z",
+        "updated_at": "2026-04-08T06:17:32.106Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "zk"
+        ],
+        "created_at": "2026-04-08T08:53:35.633Z",
+        "updated_at": "2026-04-08T08:53:35.633Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "zk07"
+        ],
+        "created_at": "2026-04-08T08:56:52.477Z",
+        "updated_at": "2026-04-08T08:56:52.477Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "created_at": "2026-04-08T10:21:16.297Z",
+        "updated_at": "2026-04-08T10:21:16.297Z"
+    }
+},
+{
+    "model": "core.cart",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "zx"
+        ],
+        "created_at": "2026-04-11T03:05:11.938Z",
+        "updated_at": "2026-04-11T03:05:11.938Z"
+    }
+},
+{
+    "model": "core.cartitem",
+    "pk": 34,
+    "fields": {
+        "cart": 14,
+        "product_id": "ABC",
+        "name": "Headlight",
+        "price": "2500.00",
+        "quantity": 3,
+        "image_url": "https://th.bing.com/th/id/OIP.z1R_4mWWcE8vCyKqN6zePgHaFj?w=252&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+        "added_at": "2026-03-10T00:35:43.300Z"
+    }
+},
+{
+    "model": "core.cartitem",
+    "pk": 38,
+    "fields": {
+        "cart": 15,
+        "product_id": "boach",
+        "name": "Baterry Belt",
+        "price": "250.00",
+        "quantity": 1,
+        "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/12/473550820/PH/NT/DK/70426137/revolte-battery-bike-belt-500x500.jpg",
+        "added_at": "2026-04-11T04:12:55.361Z"
+    }
+},
+{
+    "model": "core.order",
+    "pk": 31,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "order_type": "spare",
+        "status": "pending",
+        "total_amount": "935.00",
+        "car_listing": null,
+        "notes": "Payment: COD",
+        "bill_number": "APE-20260311-000031",
+        "bill_date": "2026-03-11T00:28:34.591Z",
+        "bill_pdf_path": "bills/bill_APE-20260311-000031.pdf",
+        "bill_sent_email": true,
+        "customer_name": "autoproeliteshop",
+        "customer_email": "girishpawar1512@gmail.com",
+        "customer_phone": "7972729020",
+        "delivery_address": "pune, pandharpur, PIN: 414141",
+        "payment_method": "cod",
+        "subtotal": "750.00",
+        "tax_amount": "135.00",
+        "delivery_charge": "50.00",
+        "created_at": "2026-03-11T00:28:34.495Z",
+        "updated_at": "2026-03-11T00:28:34.495Z"
+    }
+},
+{
+    "model": "core.order",
+    "pk": 32,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "order_type": "spare",
+        "status": "pending",
+        "total_amount": "345.00",
+        "car_listing": null,
+        "notes": "Payment: COD",
+        "bill_number": "APE-20260408-000032",
+        "bill_date": "2026-04-08T06:20:43.409Z",
+        "bill_pdf_path": "bills/bill_APE-20260408-000032.pdf",
+        "bill_sent_email": true,
+        "customer_name": "ziyan Kazi",
+        "customer_email": "ziyankazi007@gmail.com",
+        "customer_phone": "7972729020",
+        "delivery_address": "pandharpur, pandharpur, PIN: 413304",
+        "payment_method": "cod",
+        "subtotal": "250.00",
+        "tax_amount": "45.00",
+        "delivery_charge": "50.00",
+        "created_at": "2026-04-08T06:20:43.312Z",
+        "updated_at": "2026-04-08T06:20:43.312Z"
+    }
+},
+{
+    "model": "core.order",
+    "pk": 33,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "order_type": "spare",
+        "status": "pending",
+        "total_amount": "345.00",
+        "car_listing": null,
+        "notes": "Payment: COD",
+        "bill_number": "APE-20260408-000033",
+        "bill_date": "2026-04-08T10:34:40.913Z",
+        "bill_pdf_path": "bills/bill_APE-20260408-000033.pdf",
+        "bill_sent_email": true,
+        "customer_name": "Amey Bhatlavande",
+        "customer_email": "amey.bhatlavande@gmail.com",
+        "customer_phone": "7972729020",
+        "delivery_address": "pandharpur, pandharpur, PIN: 413304",
+        "payment_method": "cod",
+        "subtotal": "250.00",
+        "tax_amount": "45.00",
+        "delivery_charge": "50.00",
+        "created_at": "2026-04-08T10:34:40.834Z",
+        "updated_at": "2026-04-08T10:34:40.835Z"
+    }
+},
+{
+    "model": "core.orderitem",
+    "pk": 20,
+    "fields": {
+        "order": 31,
+        "product_id": "boach",
+        "name": "Baterry Belt",
+        "price": "250.00",
+        "quantity": 3,
+        "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/12/473550820/PH/NT/DK/70426137/revolte-battery-bike-belt-500x500.jpg",
+        "car_listing": null
+    }
+},
+{
+    "model": "core.orderitem",
+    "pk": 21,
+    "fields": {
+        "order": 32,
+        "product_id": "boach",
+        "name": "Baterry Belt",
+        "price": "250.00",
+        "quantity": 1,
+        "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/12/473550820/PH/NT/DK/70426137/revolte-battery-bike-belt-500x500.jpg",
+        "car_listing": null
+    }
+},
+{
+    "model": "core.orderitem",
+    "pk": 22,
+    "fields": {
+        "order": 33,
+        "product_id": "boach",
+        "name": "Baterry Belt",
+        "price": "250.00",
+        "quantity": 1,
+        "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/12/473550820/PH/NT/DK/70426137/revolte-battery-bike-belt-500x500.jpg",
+        "car_listing": null
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "amanpathan23122006"
+        ],
+        "full_name": "",
+        "phone": "",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-03-10T00:12:16.454Z",
+        "updated_at": "2026-03-10T00:12:16.455Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "autoproeliteshop"
+        ],
+        "full_name": "",
+        "phone": "",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-03-10T20:34:35.616Z",
+        "updated_at": "2026-03-10T20:34:35.616Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "girishpawar1512@gmail.com"
+        ],
+        "full_name": "Girish Pawar",
+        "phone": "7972729020",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-07T16:41:25.923Z",
+        "updated_at": "2026-04-07T16:41:25.923Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "ziyan"
+        ],
+        "full_name": "ziyan Kazi",
+        "phone": "7972729020",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-08T06:17:29.009Z",
+        "updated_at": "2026-04-08T06:17:29.009Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "zk"
+        ],
+        "full_name": "ziyan kazi",
+        "phone": "7972729806",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-08T08:53:29.832Z",
+        "updated_at": "2026-04-08T08:53:29.832Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "zk07"
+        ],
+        "full_name": "ziyan jaker kazi",
+        "phone": "7972729806",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-08T08:56:42.655Z",
+        "updated_at": "2026-04-08T08:56:42.655Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "amey11"
+        ],
+        "full_name": "Amey Bhatlavande",
+        "phone": "7972729020",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-08T10:21:13.851Z",
+        "updated_at": "2026-04-08T10:21:13.851Z"
+    }
+},
+{
+    "model": "core.profile",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "zx"
+        ],
+        "full_name": "azsd",
+        "phone": "7972729020",
+        "avatar_url": "",
+        "driving_license_number": "",
+        "driving_license_image": "",
+        "aadhar_number": "",
+        "aadhar_image": "",
+        "pan_number": "",
+        "pan_image": "",
+        "car_make": "",
+        "car_model": "",
+        "car_year": 0,
+        "car_image": "",
+        "created_at": "2026-04-11T03:05:09.273Z",
+        "updated_at": "2026-04-11T03:05:09.273Z"
+    }
+},
+{
+    "model": "core.sparepart",
+    "pk": 6,
+    "fields": {
+        "sku": "boach",
+        "name": "Baterry Belt",
+        "category": "belt",
+        "compatible_make": "Boach",
+        "compatible_model": "",
+        "compatible_year_from": null,
+        "compatible_year_to": null,
+        "price": "250.00",
+        "stock": 10,
+        "image_url": "https://5.imimg.com/data5/SELLER/Default/2024/12/473550820/PH/NT/DK/70426137/revolte-battery-bike-belt-500x500.jpg",
+        "description": "sedrfghj",
+        "is_active": true,
+        "created_at": "2026-03-10T23:44:32.394Z",
+        "updated_at": "2026-03-10T23:44:32.394Z"
+    }
+},
+{
+    "model": "core.sparepart",
+    "pk": 7,
+    "fields": {
+        "sku": "1",
+        "name": "Engine oil(5L)",
+        "category": "oil",
+        "compatible_make": "",
+        "compatible_model": "",
+        "compatible_year_from": null,
+        "compatible_year_to": null,
+        "price": "2500.00",
+        "stock": 500,
+        "image_url": "https://images.jdmagicbox.com/quickquotes/images_main/castrol-0w-16-magnatec-passenger-car-motor-oil-3-5-litre-2229730072-o8yvaudd.jpg0",
+        "description": "",
+        "is_active": true,
+        "created_at": "2026-03-11T07:52:10.978Z",
+        "updated_at": "2026-03-11T07:52:10.978Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-08-25T07:10:28.222Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "8",
+        "object_repr": "Mahindra XUV 500 (2017)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-08-25T07:10:28.222Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "7",
+        "object_repr": "Mahindra XUV 500 (2017)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-08-25T13:10:06.885Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "3",
+        "object_repr": "Gulf Engine Oil 1 Ltr. (oil)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-08-25T13:15:26.145Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "4",
+        "object_repr": "HP Lubricant 10 kg (Lubricant)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-08-26T15:30:03.201Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "10",
+        "object_repr": "suzuki swift (2017)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-08-28T04:45:56.037Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "11",
+        "object_repr": "suzuki Baleno (2022)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-08-28T04:45:56.037Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "9",
+        "object_repr": "Mahindra XUV 500 (2017)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-12-28T06:45:32.327Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "object_id": "6",
+        "object_repr": "28fa51de6f7d477530f1862439445b80dbd73620",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-12-28T06:45:56.598Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "Arman",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-12-28T06:45:56.598Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Autopro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-12-28T06:45:56.598Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "autoproelite",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-12-28T06:45:56.598Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "pathan",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-12-28T06:45:56.598Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "rohit",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "14",
+        "object_repr": "suzuki WagonR (2018)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "13",
+        "object_repr": "suzuki Baleno (2015)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "12",
+        "object_repr": "suzuki Baleno (2022)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "10",
+        "object_repr": "suzuki swift (2017)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "6",
+        "object_repr": "Mahindra XUV 500 (2017)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "5",
+        "object_repr": "Maruti Suzuki Baleno (2019)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "3",
+        "object_repr": "Toyota Fortuner (2024)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-12-28T06:46:19.677Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "2",
+        "object_repr": "kia kia seltos (2019)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "70",
+        "object_repr": "autoproeliteshop - login @ 2025-12-22 13:06",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "69",
+        "object_repr": "autoproeliteshop - login @ 2025-08-30 05:11",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "67",
+        "object_repr": "autoproeliteshop - login @ 2025-08-29 16:02",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "66",
+        "object_repr": "autoproeliteshop - login @ 2025-08-28 04:45",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "65",
+        "object_repr": "autoproeliteshop - add_to_cart @ 2025-08-27 11:56",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "64",
+        "object_repr": "autoproeliteshop - add_to_cart @ 2025-08-27 11:56",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "63",
+        "object_repr": "autoproeliteshop - add_to_cart @ 2025-08-27 11:55",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "62",
+        "object_repr": "autoproeliteshop - login @ 2025-08-26 15:26",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "61",
+        "object_repr": "autoproeliteshop - add_to_cart @ 2025-08-26 15:23",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "60",
+        "object_repr": "autoproeliteshop - login @ 2025-08-26 08:23",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "58",
+        "object_repr": "autoproeliteshop - login @ 2025-08-25 12:42",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-12-28T06:46:49.567Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "57",
+        "object_repr": "autoproeliteshop - login @ 2025-08-25 07:09",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-02-06T12:51:07.698Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "5",
+        "object_repr": "fghjk (ghjkj)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "14",
+        "object_repr": "kaziyan",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "12",
+        "object_repr": "lakshimi_auto",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "16",
+        "object_repr": "rahulmali2322",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "11",
+        "object_repr": "sushant",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "9",
+        "object_repr": "user",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2026-03-10T11:59:49.241Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "13",
+        "object_repr": "ziyan",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "22",
+        "object_repr": "suzuki swift zxi 2019",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "21",
+        "object_repr": "Hundai Verna sx 2024",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "20",
+        "object_repr": "suzuki baleno zxi 2020",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "19",
+        "object_repr": "Hundai Verna sx 2023",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "17",
+        "object_repr": "suzuki WagonR 2019",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "16",
+        "object_repr": "suzuki WagonR 2020",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2026-03-10T12:01:20.012Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "15",
+        "object_repr": "suzuki WagonR 2015",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.507Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "27",
+        "object_repr": "Order #27 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "26",
+        "object_repr": "Order #26 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "25",
+        "object_repr": "Order #25 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "24",
+        "object_repr": "Order #24 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "23",
+        "object_repr": "Order #23 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "22",
+        "object_repr": "Order #22 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "21",
+        "object_repr": "Order #21 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "20",
+        "object_repr": "Order #20 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "19",
+        "object_repr": "Order #19 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "18",
+        "object_repr": "Order #18 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "17",
+        "object_repr": "Order #17 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "16",
+        "object_repr": "Order #16 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "15",
+        "object_repr": "Order #15 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "14",
+        "object_repr": "Order #14 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "13",
+        "object_repr": "Order #13 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "12",
+        "object_repr": "Order #12 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "11",
+        "object_repr": "Order #11 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.508Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "10",
+        "object_repr": "Order #10 - autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "9",
+        "object_repr": "Order #9 - autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "8",
+        "object_repr": "Order #8 - autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "7",
+        "object_repr": "Order #7 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "6",
+        "object_repr": "Order #6 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "5",
+        "object_repr": "Order #5 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "4",
+        "object_repr": "Order #4 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "3",
+        "object_repr": "Order #3 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "Order #2 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2026-03-10T12:01:48.509Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "Order #1 - Guest",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2026-03-10T12:02:39.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "cart"
+        ],
+        "object_id": "8",
+        "object_repr": "Cart for Girish",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2026-03-10T12:02:39.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "cart"
+        ],
+        "object_id": "7",
+        "object_repr": "Cart for autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "8",
+        "object_repr": "Girish Pawar - Service Booking - edrftgyh rftyuji (Damage Repair)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "7",
+        "object_repr": "Girish Pawar - Service Booking - edrftgyh rftyuji (Damage Repair)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "6",
+        "object_repr": "ajay mali - Test Drive Booking - suzuki baleno zxi 2020",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "5",
+        "object_repr": "fgbnm - Service Booking - edrftgyh rftyuji (General Service)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "4",
+        "object_repr": "fgbnm - Service Booking - edrftgyh rftyuji (General Service)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "3",
+        "object_repr": "fgbnm - Service Booking - edrftgyh rftyuji (General Service)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "2",
+        "object_repr": "fgbnm - Service Booking - edrftgyh rftyuji (Damage Repair)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2026-03-10T12:03:09.956Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "contactmessage"
+        ],
+        "object_id": "1",
+        "object_repr": "Giri pawar - Test Drive Booking - Hundai Verna sx 2023",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2026-03-10T12:03:40.942Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "23",
+        "object_repr": "suzuki baleno zxi 2020",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2026-03-10T12:04:00.138Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "30",
+        "object_repr": "Order #30 - amanpathan23122006",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2026-03-10T12:04:00.138Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "29",
+        "object_repr": "Order #29 - autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2026-03-10T12:04:00.138Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "order"
+        ],
+        "object_id": "28",
+        "object_repr": "Order #28 - autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2026-03-10T12:04:18.507Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "profile"
+        ],
+        "object_id": "6",
+        "object_repr": "Profile for Girish",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2026-03-10T12:04:18.507Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "profile"
+        ],
+        "object_id": "5",
+        "object_repr": "Profile for autoproeliteshop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2026-03-10T12:04:49.498Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "3",
+        "object_repr": "Gulf Engine Oil 1 Ltr. (oil)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2026-03-10T12:04:49.499Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "4",
+        "object_repr": "HP Lubricant 10 kg (Lubricant)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2026-03-10T12:04:49.499Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "2",
+        "object_repr": "Headlight (ABC)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2026-03-10T12:04:49.499Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "5",
+        "object_repr": "fghjk (ghjkj)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.558Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "184",
+        "object_repr": "autoproeliteshop - login - 2026-03-10 05:21:44.728650+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.558Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "182",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:35:50.624632+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.558Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "181",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:35:49.465363+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "180",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:35:45.789854+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "179",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:35:44.718874+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "178",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:35:43.606397+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "177",
+        "object_repr": "amanpathan23122006 - login - 2026-03-10 00:26:44.488136+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "176",
+        "object_repr": "amanpathan23122006 - login - 2026-03-10 00:13:07.612009+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "175",
+        "object_repr": "amanpathan23122006 - update - 2026-03-10 00:10:57.282636+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "174",
+        "object_repr": "amanpathan23122006 - update - 2026-03-10 00:10:55.225768+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "173",
+        "object_repr": "amanpathan23122006 - update - 2026-03-10 00:10:51.948590+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "172",
+        "object_repr": "amanpathan23122006 - create - 2026-03-10 00:10:34.688531+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "171",
+        "object_repr": "amanpathan23122006 - add_to_cart - 2026-03-10 00:09:54.136668+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "170",
+        "object_repr": "amanpathan23122006 - login - 2026-03-10 00:07:59.995239+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "169",
+        "object_repr": "amanpathan23122006 - login - 2026-03-10 00:07:20.754055+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "168",
+        "object_repr": "autoproeliteshop - create - 2026-02-09 10:34:27.659098+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "167",
+        "object_repr": "autoproeliteshop - create - 2026-02-09 10:34:24.677372+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "166",
+        "object_repr": "autoproeliteshop - view - 2026-02-09 10:30:04.003333+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.559Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "165",
+        "object_repr": "autoproeliteshop - create - 2026-02-09 10:29:19.364222+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "164",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-09 10:28:35.647328+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "163",
+        "object_repr": "autoproeliteshop - login - 2026-02-09 10:27:16.807132+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "162",
+        "object_repr": "autoproeliteshop - login - 2026-02-09 10:02:09.971795+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "160",
+        "object_repr": "autoproeliteshop - create - 2026-02-09 08:51:22.728034+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "159",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-09 08:49:17.546586+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "158",
+        "object_repr": "autoproeliteshop - create - 2026-02-09 08:48:49.585304+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "157",
+        "object_repr": "autoproeliteshop - login - 2026-02-09 08:43:51.131720+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "111",
+        "object_repr": "autoproeliteshop - login - 2026-02-06 15:50:30.629100+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "110",
+        "object_repr": "autoproeliteshop - create - 2026-02-06 13:47:10.601352+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "109",
+        "object_repr": "autoproeliteshop - login - 2026-02-06 12:49:34.613089+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "108",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-06 03:36:59.787767+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.560Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "107",
+        "object_repr": "autoproeliteshop - login - 2026-02-05 04:07:27.183454+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.561Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "104",
+        "object_repr": "autoproeliteshop - login - 2026-02-05 04:01:34.235323+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "103",
+        "object_repr": "autoproeliteshop - login - 2026-02-05 03:50:13.810445+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "102",
+        "object_repr": "autoproeliteshop - create - 2026-02-05 03:47:10.558681+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "100",
+        "object_repr": "autoproeliteshop - login - 2026-02-05 03:09:22.277266+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "99",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 17:43:38.143194+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "98",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 17:43:36.562548+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "97",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 17:42:48.541062+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "96",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 17:41:58.373200+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "95",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 16:57:07.975622+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "94",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-04 16:50:00.694395+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "93",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-04 16:45:28.265140+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "92",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-04 16:09:10.311423+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "91",
+        "object_repr": "autoproeliteshop - login - 2026-02-04 14:32:00.492004+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "90",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 14:31:40.368773+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "88",
+        "object_repr": "autoproeliteshop - login - 2026-02-04 14:06:33.320123+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.562Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "87",
+        "object_repr": "autoproeliteshop - create - 2026-02-04 14:03:15.084378+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "84",
+        "object_repr": "autoproeliteshop - login - 2026-02-03 18:19:07.213859+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "82",
+        "object_repr": "autoproeliteshop - login - 2026-02-03 17:18:36.900956+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "81",
+        "object_repr": "autoproeliteshop - login - 2026-02-03 17:03:03.885287+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "80",
+        "object_repr": "autoproeliteshop - login - 2026-02-03 15:50:54.972072+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "78",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-03 14:53:40.986509+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "77",
+        "object_repr": "autoproeliteshop - add_to_cart - 2026-02-03 14:53:10.899278+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "76",
+        "object_repr": "autoproeliteshop - login - 2026-02-03 13:11:01.413092+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "75",
+        "object_repr": "autoproeliteshop - login - 2026-01-30 06:22:06.842140+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "74",
+        "object_repr": "autoproeliteshop - add_to_cart - 2025-12-28 08:03:37.832622+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "73",
+        "object_repr": "autoproeliteshop - login - 2025-12-28 06:45:22.231540+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "72",
+        "object_repr": "autoproeliteshop - login - 2025-12-28 06:32:22.258201+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2026-03-10T12:05:41.563Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "useractivity"
+        ],
+        "object_id": "71",
+        "object_repr": "autoproeliteshop - add_to_cart - 2025-12-28 04:47:46.311650+00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2026-03-10T12:32:41.571Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "listing"
+        ],
+        "object_id": "24",
+        "object_repr": "honda Unicorn bs6 2019",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2026-03-10T23:44:32.401Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "6",
+        "object_repr": "Baterry Belt (boach)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2026-03-11T07:52:10.986Z",
+        "user": [
+            "autoproeliteshop"
+        ],
+        "content_type": [
+            "core",
+            "sparepart"
+        ],
+        "object_id": "7",
+        "object_repr": "Engine oil(5L) (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

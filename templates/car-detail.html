@@ -1,0 +1,124 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Car Details - AutoPro Elite{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/car-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="loading" class="loading">
+      <i class="fas fa-spinner fa-spin"></i>&nbsp;&nbsp;Loading car details...
+    </div>
+    
+    <div id="error" class="error" style="display:none">
+      <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;<span id="error-message">Car not found</span>
+    </div>
+    
+    <div id="content" class="detail-container" style="display:none">
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Image Gallery -->
+        <div class="panel">
+          <div class="image-gallery">
+            <img id="main-image" class="main-image" src="" alt="Car Image">
+            <div class="image-nav" id="image-nav">
+              <div class="image-dot active"></div>
+            </div>
+            <!-- Image navigation arrows -->
+            <button id="prev-image" class="image-arrow image-arrow-left" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:#fff;border:none;border-radius:50%;width:40px;height:40px;cursor:pointer;display:none">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-image" class="image-arrow image-arrow-right" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:#fff;border:none;border-radius:50%;width:40px;height:40px;cursor:pointer;display:none">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Car Header -->
+        <div class="panel car-header">
+          <h1 id="car-title" class="car-title"></h1>
+          <div id="car-price" class="car-price"></div>
+          <div id="car-meta" class="car-meta"></div>
+        </div>
+        
+        <!-- Overview -->
+        <div class="panel overview">
+          <h3>Overview</h3>
+          <div id="overview-grid" class="overview-grid"></div>
+        </div>
+        
+        <!-- Description & Features -->
+        <div class="panel description">
+          <h3>Features & Description</h3>
+          <div id="features-grid" class="features-grid"></div>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Seller Info -->
+        <div class="panel seller-info">
+          <div class="seller-header">
+            <div id="seller-avatar" class="seller-avatar"></div>
+            <div>
+              <h4 id="seller-name" class="seller-name"></h4>
+              <p id="seller-since" class="seller-since"></p>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <button id="contact-seller" class="contact-btn contact-primary">
+              <i class="fas fa-phone"></i> Contact Seller
+            </button>
+            <button id="show-phone" class="contact-btn contact-secondary">
+              <i class="fas fa-eye"></i> Show Phone Number
+            </button>
+          </div>
+        </div>
+        
+        <!-- Location -->
+        <div class="panel location-info">
+          <h4>Location</h4>
+          <div id="location-text" class="location-text">
+            <i class="fas fa-map-marker-alt"></i>
+            <span></span>
+          </div>
+          <div class="map-placeholder">
+            <i class="fas fa-map"></i>&nbsp;&nbsp;Map View
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Related Listings -->
+    <div id="related-section" class="related-section" style="display:none">
+      <h2 class="related-title">Related Cars</h2>
+      <div id="related-grid" class="related-grid"></div>
+    </div>
+    
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-backdrop" style="position:fixed;inset:0;background:rgba(2,6,23,.55);display:none;align-items:center;justify-content:center;z-index:1200">
+      <div class="modal" style="background:#fff;border-radius:14px;box-shadow:0 20px 40px rgba(2,6,23,.2);width:min(420px,90vw);padding:18px;border:1px solid var(--border)">
+        <h3><i class="fas fa-user"></i> Seller Contact</h3>
+        <div style="display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:8px 0">
+          <i class="fas fa-user"></i><div><div id="m_name" style="font-weight:600"></div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:8px 0">
+          <i class="fas fa-envelope"></i><div id="m_email"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:8px 0">
+          <i class="fas fa-phone"></i><div id="m_phone"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:8px 0">
+          <i class="fas fa-location-dot"></i><div id="m_loc"></div>
+        </div>
+        <div style="display:flex;justify-content:flex-end;margin-top:12px">
+          <button id="m_close" class="btn btn-primary" style="padding:10px 16px">Close</button>
+        </div>
+      </div>
+    </div>
+
+{% block extra_js %}
+  <script src="{% static 'js/car-detail.js' %}"></script>
+{% endblock %}{% endblock %}

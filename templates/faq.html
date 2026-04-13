@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/faq.css' %}">
+{% endblock %}
+{% block title %}FAQ{% endblock %}
+
+
+
+{% block content %}
+<div class="faq-wrap">
+  <div class="faq-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Quick answers about selling cars, shopping listings, spare parts, price estimates, and damage detection.</p>
+  </div>
+
+  <div class="faq-grid">
+    <details class="faq-item">
+      <summary>
+        How do I create a car listing?
+        <span class="chev"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="faq-body">
+        <p>Open <b>Sell Your Car</b>, fill in make/model/year/km/fuel/transmission, set your expected price, and publish. Your listing will appear in <b>Shop</b>.</p>
+        <div class="meta">Tip: Add a clear photo to get faster responses.</div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        How does the price estimate work?
+        <span class="chev"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="faq-body">
+        <p>The estimate uses year, kilometers, fuel type, transmission and owners to calculate a market range. If an external price API is configured, we use that; otherwise we use a built-in heuristic.</p>
+        <div class="meta">You can still edit your final selling price before publishing.</div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        Why can’t I add to cart without login?
+        <span class="chev"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="faq-body">
+        <p>Cart is linked to your account so your items remain saved. Please login to add cars or spare parts to your cart and view them in <b>My Account</b>.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        How do I run Damage Detection?
+        <span class="chev"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="faq-body">
+        <p>Go to <b>Damage Detection</b>, upload one or more images, then click <b>Run Detection</b>. The results highlight detected areas with labels and confidence.</p>
+        <div class="meta">If the external damage API is not configured, demo detections may appear for testing.</div>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        How do I contact the seller?
+        <span class="chev"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="faq-body">
+        <p>In the <b>Shop</b> page, click <b>Contact Seller</b> on a listing to view contact details (when available).</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-actions">
+    <a class="primary" href="/help/">Help Center</a>
+    <a href="/contact/">Contact Support</a>
+    <a href="/shop/">Go to Shop</a>
+  </div>
+</div>
+
+{% block extra_js %}
+  <script src="{% static 'js/faq.js' %}"></script>
+{% endblock %}{% endblock %}

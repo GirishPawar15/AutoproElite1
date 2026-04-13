@@ -1,0 +1,127 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/assess-damage.css' %}">
+{% endblock %}
+{% block title %}Assess Vehicle Damage - AutoPro Elite{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="page">
+      <h1><i class="fas fa-tools" style="color:var(--secondary)"></i> Assess Vehicle Damage</h1>
+      <p class="lead">Tell us what happened. We'll estimate a repair cost range instantly and ask a few clarifying questions.</p>
+
+      <div class="grid">
+        <div class="left">
+          <form id="damageForm" class="section">
+            <h3>Damage Details</h3>
+            <div class="row">
+              <div>
+                <label for="vehicleType">Vehicle Type</label>
+                <select id="vehicleType" required>
+                  <option value="" selected disabled>Select vehicle type</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Hatchback">Hatchback</option>
+                  <option value="Coupe">Coupe</option>
+                </select>
+              </div>
+              <div>
+                <label for="year">Model Year</label>
+                <input id="year" type="number" min="1990" max="2026" value="2020" required />
+              </div>
+            </div>
+
+            <label for="area">Primary Damage Area</label>
+            <select id="area" required>
+              <option value="" selected disabled>Select damage area</option>
+              <option value="bumper">Front/Rear Bumper</option>
+              <option value="door">Door/Side Panel</option>
+              <option value="hood">Hood/Trunk</option>
+              <option value="windshield">Windshield/Glass</option>
+              <option value="engine">Engine/Bay</option>
+              <option value="suspension">Suspension/Wheel</option>
+              <option value="electrical">Electrical</option>
+              <option value="paint">Paint Only</option>
+            </select>
+
+            <div class="row">
+              <div>
+                <label for="severity">Severity</label>
+                <select id="severity">
+                  <option value="" selected disabled>Select severity</option>
+                  <option value="minor">Minor</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="severe">Severe</option>
+                </select>
+              </div>
+              <div>
+                <label for="drivable">Is the car drivable?</label>
+                <select id="drivable">
+                  <option value="" selected disabled>Select option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="desc">Describe the damage</label>
+            <textarea id="desc" placeholder="e.g., Rear-ended at low speed; bumper cracked and trunk misaligned."></textarea>
+
+            <div class="row">
+              <div>
+                <label for="labor">Local Labor Rate (per hour)</label>
+                <input id="labor" type="number" min="20" max="250" value="80" />
+              </div>
+              <div>
+                <label for="photos">Photos (optional)</label>
+                <input id="photos" type="file" accept="image/*" multiple />
+              </div>
+            </div>
+
+            <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+              <span class="pill">Insurance Optional</span>
+              <span class="pill">OEM/Aftermarket Mix</span>
+              <span class="pill">Paint Match Guarantee</span>
+            </div>
+
+            <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+              <button type="button" class="btn" id="estimateBtn"><i class="fas fa-calculator"></i> Estimate Cost</button>
+              <button type="reset" class="btn btn-secondary"><i class="fas fa-rotate"></i> Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="right">
+          <div class="section est-card">
+            <h3>Estimated Repair Cost</h3>
+            <div id="price" class="est-price">--</div>
+            <div id="breakdown" style="margin-top:10px;color:var(--gray)">Fill the form and click Estimate.</div>
+          </div>
+
+          <div class="section qa hidden" id="questions">
+            <h3>Follow-up Questions</h3>
+            <p class="q">1) Are there any warning lights on the dashboard?</p>
+            <select id="warnSel">
+              <option value="no" selected>No</option>
+              <option value="yes">Yes</option>
+            </select>
+            <p class="q" style="margin-top:10px">2) Did airbags deploy?</p>
+            <select id="airbagSel">
+              <option value="no" selected>No</option>
+              <option value="yes">Yes</option>
+            </select>
+            <p class="q" style="margin-top:10px">3) Any fluid leaks under the vehicle?</p>
+            <select id="leakSel">
+              <option value="no" selected>No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% block extra_js %}
+  <script src="{% static 'js/assess-damage.js' %}"></script>
+{% endblock %}{% endblock %}

@@ -1,0 +1,316 @@
+
+{% extends 'base.html' %}{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/shop.css' %}">
+{% endblock %}
+{% block title %}Shop Cars - AutoPro Elite{% endblock %}
+{% block content %}
+  <header class="hero">
+    <div class="container">
+      <h1>Shop Secondhand Cars</h1>
+      <p>Browse and filter verified listings. New cars appear as sellers publish from the Sell page.</p>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <aside class="panel filters">
+      <div class="row">
+        <div>
+          <label>Make</label>
+          <input id="fMake" placeholder="Toyota, Honda, BMW" />
+        </div>
+        <div>
+          <label>Model</label>
+          <input id="fModel" placeholder="Corolla, Civic" />
+        </div>
+      </div>
+      <div class="row" style="margin-top:10px">
+        <div>
+          <label>Min Price (₹)</label>
+          <input id="fMin" type="number" min="0" step="10000" placeholder="200000" />
+        </div>
+        <div>
+          <label>Max Price (₹)</label>
+          <input id="fMax" type="number" min="0" step="10000" placeholder="1500000" />
+        </div>
+      </div>
+      <div class="row" style="margin-top:10px">
+        <div>
+          <label>Year From</label>
+          <select id="fYearFrom">
+            <option value="">Any</option>
+          </select>
+        </div>
+        <div>
+          <label>Fuel</label>
+          <select id="fFuel">
+            <option value="">Any</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>CNG</option>
+            <option>Hybrid</option>
+            <option>Electric</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <button id="btnApply" class="pill"><i class="fas fa-filter"></i> Apply Filters</button>
+        <button id="btnClear" class="pill" style="background:#fff;border-color:#e2e8f0;color:#0f172a"><i class="fas fa-eraser"></i> Clear</button>
+      </div>
+    </aside>
+
+    <section>
+      <div class="results-head">
+        <div class="searchbar" style="flex:1">
+          <input id="q" placeholder="Search make, model, location..." />
+          <select id="sort">
+            <option value="-createdAt">Newest</option>
+            <option value="price">Price: Low to High</option>
+            <option value="-price">Price: High to Low</option>
+            <option value="-year">Year: New to Old</option>
+            <option value="year">Year: Old to New</option>
+          </select>
+        </div>
+        <div id="count" style="color:#e5edff;min-width:120px;text-align:right"></div>
+      </div>
+      <div id="cards" class="cards"></div>
+      <div id="contactModal" class="modal-backdrop">
+        <div class="modal">
+          <h3><i class="fas fa-user"></i> Seller Contact</h3>
+          <div class="row"><i class="fas fa-user"></i><div><div id="m_name" class="title"></div></div></div>
+          <div class="row"><i class="fas fa-envelope"></i><div id="m_email"></div></div>
+          <div class="row"><i class="fas fa-phone"></i><div id="m_phone"></div></div>
+          <div class="row"><i class="fas fa-location-dot"></i><div id="m_loc"></div></div>
+          <div class="actions"><button id="m_close" class="btn btn-primary">Close</button></div>
+        </div>
+      </div>
+      
+      <!-- EMI Calculator Modal -->
+      <div id="emiModal" class="modal-backdrop">
+        <div class="modal emi-modal">
+          <h3>Car Loan Calculator</h3>
+          <div class="emi-content">
+            <div class="emi-left">
+              <div class="emi-result">
+                <div class="label">EMI starting from</div>
+                <div class="amount">₹<span id="emiAmount">2,39,225</span></div>
+                <div class="subtext">for <span id="emiTenure">36</span> months @ <span id="emiRate">17.2</span>%</div>
+              </div>
+              
+              <div class="emi-chart">
+                <svg viewBox="0 0 120 120" style="transform:rotate(-90deg)">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="#e2e8f0" stroke-width="20"/>
+                  <circle id="principalArc" cx="60" cy="60" r="50" fill="none" stroke="#f97316" stroke-width="20" 
+                    stroke-dasharray="314" stroke-dashoffset="0" stroke-linecap="round"/>
+                  <circle id="interestArc" cx="60" cy="60" r="50" fill="none" stroke="#1e40af" stroke-width="20" 
+                    stroke-dasharray="314" stroke-dashoffset="157" stroke-linecap="round"/>
+                </svg>
+              </div>
+              
+              <div class="emi-breakdown">
+                <div class="breakdown-item">
+                  <div class="breakdown-label">
+                    <div class="color-box" style="background:#f97316"></div>
+                    Principal Loan Amount
+                  </div>
+                  <div class="breakdown-value">₹<span id="principalAmount">66,91,159</span></div>
+                </div>
+                <div class="breakdown-item">
+                  <div class="breakdown-label">
+                    <div class="color-box" style="background:#1e40af"></div>
+                    Total Interest Payable
+                  </div>
+                  <div class="breakdown-value">₹<span id="interestAmount">19,20,927</span></div>
+                </div>
+                <div class="breakdown-item">
+                  <div class="breakdown-label">
+                    <div class="color-box" style="background:#0f172a"></div>
+                    Total Amount Payable
+                  </div>
+                  <div class="breakdown-value">₹<span id="totalAmount">86,12,086</span></div>
+                </div>
+              </div>
+              
+              <div class="emi-disclaimer">
+                Disclaimer: The applicable interest rate may vary based on your credit profile and lender policies.
+              </div>
+            </div>
+            
+            <div class="emi-right">
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-label">Loan Amount</span>
+                  <span class="slider-value" id="loanAmountValue">₹66,91,159</span>
+                </div>
+                <div class="slider-container">
+                  <div class="slider-track" id="loanTrack" style="width:74%"></div>
+                  <input type="range" class="slider-input" id="loanAmount" min="50000" max="9000000" value="6691159" step="10000">
+                </div>
+                <div class="slider-range">
+                  <span>₹50,000</span>
+                  <span>₹90,00,000</span>
+                </div>
+              </div>
+              
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-label">Interest Rate</span>
+                  <span class="slider-value" id="interestRateValue">17.2%</span>
+                </div>
+                <div class="slider-container">
+                  <div class="slider-track" id="rateTrack" style="width:49%"></div>
+                  <input type="range" class="slider-input" id="interestRate" min="5" max="30" value="17.2" step="0.1">
+                </div>
+                <div class="slider-range">
+                  <span>5%</span>
+                  <span>30%</span>
+                </div>
+              </div>
+              
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-label">Duration of Loan</span>
+                  <span class="slider-value" id="durationValue">3 Years</span>
+                </div>
+                <div class="slider-container">
+                  <div class="slider-track" id="durationTrack" style="width:40%"></div>
+                  <input type="range" class="slider-input" id="duration" min="1" max="5" value="3" step="1">
+                </div>
+                <div class="slider-range">
+                  <span>1 Year</span>
+                  <span>5 Years</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:20px">
+            <button id="emi_close" class="btn btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Test Drive Booking Modal -->
+      <div id="testDriveModal" class="modal-backdrop">
+        <div class="modal test-drive-modal">
+          <h3><i class="fas fa-calendar-check"></i> Book a Test Drive</h3>
+          <div class="test-drive-content">
+            <div class="car-info-section">
+              <img id="td_car_image" src="" alt="Car" class="td-car-image">
+              <div class="td-car-details">
+                <h4 id="td_car_name">Car Name</h4>
+                <p id="td_car_price">₹0</p>
+                <p id="td_car_location"><i class="fas fa-location-dot"></i> Location</p>
+              </div>
+            </div>
+            
+            <form id="testDriveForm" class="td-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="td_name">Full Name *</label>
+                  <input type="text" id="td_name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                  <label for="td_phone">Phone Number *</label>
+                  <input type="tel" id="td_phone" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="td_email">Email Address *</label>
+                  <input type="email" id="td_email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="td_city">City *</label>
+                  <input type="text" id="td_city" required placeholder="Enter your city">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="td_date">Preferred Date *</label>
+                  <input type="date" id="td_date" required>
+                </div>
+                <div class="form-group">
+                  <label for="td_time">Preferred Time *</label>
+                  <select id="td_time" required>
+                    <option value="">Select time slot</option>
+                    <option value="09:00-10:00">09:00 AM - 10:00 AM</option>
+                    <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                    <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                    <option value="12:00-13:00">12:00 PM - 01:00 PM</option>
+                    <option value="14:00-15:00">02:00 PM - 03:00 PM</option>
+                    <option value="15:00-16:00">03:00 PM - 04:00 PM</option>
+                    <option value="16:00-17:00">04:00 PM - 05:00 PM</option>
+                    <option value="17:00-18:00">05:00 PM - 06:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="td_message">Additional Message (Optional)</label>
+                <textarea id="td_message" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+              </div>
+              
+              <div class="td-terms">
+                <input type="checkbox" id="td_terms" required>
+                <label for="td_terms">I agree to be contacted by the dealer for test drive confirmation</label>
+              </div>
+              
+              <div id="td_success" class="td-success" style="display:none">
+                <i class="fas fa-check-circle"></i>
+                <p>Test drive booked successfully! We'll contact you shortly to confirm.</p>
+              </div>
+              
+              <div id="td_error" class="td-error" style="display:none">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="td_error_message">Something went wrong. Please try again.</p>
+              </div>
+            </form>
+          </div>
+          <div class="actions">
+            <button id="td_close" class="btn btn-secondary">Cancel</button>
+            <button id="td_submit" class="btn btn-primary">
+              <i class="fas fa-calendar-check"></i> Confirm Booking
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="empty" class="empty" style="display:none">No cars match your filters.</div>
+    </section>
+  </main>
+  
+  <!-- Compare Bar -->
+  <div id="compareBar" class="compare-bar">
+    <div class="compare-bar-content">
+      <div class="compare-items" id="compareItems"></div>
+      <div class="compare-actions">
+        <div class="compare-count"><span id="compareCount">0</span> Cars Selected</div>
+        <button class="btn btn-primary" id="compareBtn" disabled>
+          <i class="fas fa-exchange-alt"></i> Compare Now
+        </button>
+        <button class="btn btn-outline" id="clearCompareBtn">
+          <i class="fas fa-times"></i> Clear All
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Compare Modal -->
+  <div id="compareModal" class="modal-backdrop">
+    <div class="modal compare-modal">
+      <div class="compare-header">
+        <h3><i class="fas fa-exchange-alt"></i> Compare Cars</h3>
+        <button id="compare_close" class="btn btn-outline">
+          <i class="fas fa-times"></i> Close
+        </button>
+      </div>
+      <div class="compare-grid" id="compareGrid"></div>
+    </div>
+  </div>
+
+{% block extra_js %}
+  <script src="{% static 'js/shop.js' %}"></script>
+{% endblock %}
+{% endblock %}

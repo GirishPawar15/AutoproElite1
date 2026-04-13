@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Us - AutoPro Elite{% endblock %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block content %}
+  <header class="hero">
+    <div class="container">
+      <h1>About AutoPro Elite</h1>
+      <p>Excellence in automotive solutions — powered by AI and professional expertise.</p>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>Our Mission</h2>
+      <p>To empower car owners and dealers with accurate valuations, damage assessments, and seamless selling experiences through intuitive technology and expert guidance.</p>
+      <div class="values">
+        <div class="value"><strong>Accuracy</strong><br/>AI-driven estimates with real-world validation.</div>
+        <div class="value"><strong>Transparency</strong><br/>Clear process and trustworthy results.</div>
+        <div class="value"><strong>Speed</strong><br/>Decisions in seconds, not days.</div>
+      </div>
+    </section>
+
+    <aside class="card">
+      <h2>At a Glance</h2>
+      <p><i class="fas fa-check-circle" style="color:#22c55e"></i> 10k+ cars evaluated</p>
+      <p><i class="fas fa-shield-alt" style="color:#6366f1"></i> Secure data handling</p>
+      <p><i class="fas fa-headset" style="color:#f59e0b"></i> 24/7 support</p>
+      <a class="btn" href="/contact/"><i class="fas fa-paper-plane"></i>Contact Us</a>
+    </aside>
+  </main>
+
+{% block extra_js %}
+  <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
+{% endblock %}
+

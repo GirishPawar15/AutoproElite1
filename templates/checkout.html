@@ -1,0 +1,149 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+{% endblock %}
+{% block title %}Checkout - AutoPro Elite{% endblock %}
+{% block content %}
+  <div class="container">
+    <h1 class="page-title">
+      <i class="fas fa-credit-card"></i>
+      Checkout
+    </h1>
+    
+    <div class="checkout-container">
+      <!-- Main Checkout Form -->
+      <div class="main-content">
+        <!-- Delivery Address -->
+        <div class="panel">
+          <h3><i class="fas fa-map-marker-alt"></i> Delivery Address</h3>
+          <form id="addressForm">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Address *</label>
+              <textarea id="address" name="address" rows="3" required placeholder="House/Flat No, Street, Area"></textarea>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="pincode">Pincode *</label>
+                <input type="text" id="pincode" name="pincode" required>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Payment Methods -->
+        <div class="panel">
+          <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+          <div class="payment-methods">
+            <!-- Cash on Delivery -->
+            <label class="payment-option" for="cod">
+              <input type="radio" name="paymentMethod" value="cod" id="cod" checked>
+              <div class="payment-icon cod">
+                <i class="fas fa-truck"></i>
+              </div>
+              <div class="payment-details">
+                <h4>Cash on Delivery</h4>
+                <small>Pay when you receive the product</small>
+              </div>
+            </label>
+            
+            <!-- UPI Payment -->
+            <label class="payment-option" for="upi">
+              <input type="radio" name="paymentMethod" value="upi" id="upi">
+              <div class="payment-icon upi">
+                <i class="fab fa-google-pay"></i>
+              </div>
+              <div class="payment-details">
+                <h4>UPI Payment</h4>
+                <small>Pay instantly with PhonePe, GPay, Paytm</small>
+              </div>
+            </label>
+            
+            <!-- Card Payment (Coming Soon) -->
+            <label class="payment-option disabled" style="opacity:0.6; cursor:not-allowed">
+              <div class="payment-icon card">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <div class="payment-details">
+                <h4>Card Payment</h4>
+                <small>Coming Soon - Credit/Debit Cards</small>
+              </div>
+            </label>
+          </div>
+          
+          <!-- UPI Apps (shown when UPI is selected) -->
+          <div id="upiApps" class="upi-apps" style="display:none">
+            <a href="#" class="upi-app" data-app="phonepe">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/phonepe-2709167-2249157.png" alt="PhonePe">
+              <span>PhonePe</span>
+            </a>
+            <a href="#" class="upi-app" data-app="gpay">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/google-pay-2038785-1721675.png" alt="Google Pay">
+              <span>Google Pay</span>
+            </a>
+            <a href="#" class="upi-app" data-app="paytm">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/paytm-226448.png" alt="Paytm">
+              <span>Paytm</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Place Order Button -->
+        <div class="panel">
+          <button id="placeOrderBtn" class="btn btn-primary" style="width:100%; font-size:1.1rem">
+            <i class="fas fa-shopping-cart"></i>
+            Place Order
+          </button>
+          
+          <div id="loading" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> Processing your order...
+          </div>
+          
+          <div id="success" class="success">
+            <i class="fas fa-check-circle"></i> Order placed successfully!
+          </div>
+          
+          <div id="error" class="error">
+            <i class="fas fa-exclamation-triangle"></i> <span id="errorMessage">Something went wrong</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Order Summary Sidebar -->
+      <div class="order-summary">
+        <div class="panel">
+          <h3><i class="fas fa-receipt"></i> Order Summary</h3>
+          <div id="orderItems"></div>
+          <div class="summary-item">
+            <span>Subtotal:</span>
+            <span id="subtotal">₹0</span>
+          </div>
+          <div class="summary-item">
+            <span>Delivery:</span>
+            <span id="delivery">₹50</span>
+          </div>
+          <div class="summary-item">
+            <strong>Total:</strong>
+            <strong id="total">₹50</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% block extra_js %}
+  <script src="{% static 'js/checkout.js' %}"></script>
+{% endblock %}{% endblock %}

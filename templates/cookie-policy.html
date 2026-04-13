@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Cookie Policy{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/cookie-policy.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="legal-wrap">
+  <div class="legal-hero">
+    <h1>Cookie Policy</h1>
+    <p>This Cookie Policy explains what cookies are and how we use them on AutoPro Elite.</p>
+    <div class="legal-muted" style="margin-top:10px">Last updated: 2025</div>
+  </div>
+
+  <section class="legal-card">
+    <h2>What are cookies?</h2>
+    <p>Cookies are small text files stored on your device. They help websites remember preferences and improve user experience.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>How we use cookies</h2>
+    <table class="cookie-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Purpose</th>
+          <th>Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Essential</td>
+          <td>Required for core site functionality</td>
+          <td>Session, security</td>
+        </tr>
+        <tr>
+          <td>Preferences</td>
+          <td>Remember choices and settings</td>
+          <td>Theme, language</td>
+        </tr>
+        <tr>
+          <td>Analytics</td>
+          <td>Understand usage and improve experience</td>
+          <td>Page visits, feature usage</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="legal-card">
+    <h2>Managing cookies</h2>
+    <p>You can control cookies through your browser settings. Disabling some cookies may affect site functionality.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>Contact</h2>
+    <p>For questions about cookies, contact us via the <a href="/contact/">Contact</a> page.</p>
+  </section>
+</div>
+
+{% block extra_js %}
+  <script src="{% static 'js/cookie-policy.js' %}"></script>
+{% endblock %}{% endblock %}

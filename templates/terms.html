@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/terms.css' %}">
+{% endblock %}
+{% block title %}Terms of Service{% endblock %}
+
+
+{% block content %}
+<div class="legal-wrap">
+  <div class="legal-hero">
+    <h1>Terms of Service</h1>
+    <p>By accessing or using AutoPro Elite, you agree to these Terms. Please read them carefully.</p>
+    <div class="legal-muted" style="margin-top:10px">Last updated: 2025</div>
+  </div>
+
+  <section class="legal-card">
+    <h2>Using the service</h2>
+    <ul>
+      <li>You must provide accurate information when creating an account or listing.</li>
+      <li>You are responsible for your account activity and keeping credentials secure.</li>
+      <li>You agree not to misuse the platform (fraud, harmful content, scraping, attacks).</li>
+    </ul>
+  </section>
+
+  <section class="legal-card">
+    <h2>Listings and content</h2>
+    <ul>
+      <li>You own the content you upload, but you grant us permission to display it to provide the service.</li>
+      <li>Listings must be lawful and must not violate third-party rights.</li>
+      <li>We may remove content that violates these Terms.</li>
+    </ul>
+  </section>
+
+  <section class="legal-card">
+    <h2>Disclaimer</h2>
+    <p>Prices, valuations, and damage detection results are estimates and may vary. AutoPro Elite does not guarantee accuracy for every vehicle or image.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, AutoPro Elite is not liable for indirect or consequential damages resulting from the use of the platform.</p>
+  </section>
+
+  <section class="legal-card">
+    <h2>Contact</h2>
+    <p>Questions about these Terms? Contact us via the <a href="/contact/">Contact</a> page.</p>
+  </section>
+</div>
+{% block extra_js %}
+  <script src="{% static 'js/terms.js' %}"></script>
+{% endblock %}{% endblock %}
+

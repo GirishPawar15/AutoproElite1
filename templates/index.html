@@ -1,0 +1,118 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block title %}Home - AutoPro Elite{% endblock %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="hero-video-container">
+                <div class="hero-image" style="background-image: url('https://www.shutterstock.com/image-photo/automotive-engineer-working-on-electric-600nw-2204219067.jpg')"></div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-brand">AutoPro Elite</span>
+                    <span class="title-tagline">Excellence in Automotive Solutions</span>
+                </h1>
+                <p class="hero-description">
+                    Your trusted partner for comprehensive automotive services. From accurate price predictions 
+                    to professional damage assessments, we provide cutting-edge solutions for all your vehicle needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/sell-car/" class="btn btn-primary">
+                        <i class="fas fa-indian-rupee-sign"></i>
+                        Get Price Estimate
+                    </a>
+                    <a href="/assess-damage/" class="btn btn-secondary">
+                        <i class="fas fa-tools"></i>
+                        Assess Damage
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats fade-in delay-1">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Cars Evaluated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text fade-in">
+                    <h2>Why Choose AutoPro Elite?</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                            <div class="feature-content">
+                                <h4>Advanced AI Technology</h4>
+                                <p>Cutting-edge algorithms for accurate predictions and assessments</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-award"></i></div>
+                            <div class="feature-content">
+                                <h4>Certified Experts</h4>
+                                <p>Professional team with years of automotive industry experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="feature-content">
+                                <h4>Instant Results</h4>
+                                <p>Get comprehensive reports and valuations in seconds</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                            <div class="feature-content">
+                                <h4>Secure & Reliable</h4>
+                                <p>Your data is protected with enterprise-grade security</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-image fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Professional Car Service" class="feature-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of satisfied customers who trust AutoPro Elite for their automotive needs</p>
+                <div class="cta-buttons">
+                    <a href="sell-car.html" class="btn btn-primary btn-large">Start Free Evaluation</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+{% block extra_js %}
+  <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}{% endblock %}
