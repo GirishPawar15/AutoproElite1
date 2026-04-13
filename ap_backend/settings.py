@@ -7,6 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Load environment variables from .env file
 load_dotenv(BASE_DIR / ".env")
 
+CSRF_TRUSTED_ORIGINS = ['https://autoproelite1.onrender.com']
+
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "t")
