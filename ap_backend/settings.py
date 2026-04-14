@@ -116,6 +116,7 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_AGE = 86400  # 24 hours
 
 # Security Settings for Production
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_SSL_REDIRECT = not DEBUG
 SECURE_HSTS_SECONDS = 31536000 if not DEBUG else 0
@@ -146,7 +147,7 @@ DAMAGE_API_URL = os.environ.get("DAMAGE_API_URL")
 GOOGLE_OAUTH_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_CLIENT_ID")
 GOOGLE_OAUTH_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH_CLIENT_SECRET")
 # Redirect URI registered in Google Cloud Console must match this (or the env var override)
-GOOGLE_OAUTH_REDIRECT_URI = "http://localhost:8000/api/auth/google/callback/"
+GOOGLE_OAUTH_REDIRECT_URI = os.environ.get("GOOGLE_OAUTH_REDIRECT_URI")
 
 # Chatbot behavior flags
 
