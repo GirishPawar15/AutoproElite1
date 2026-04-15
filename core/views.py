@@ -860,31 +860,10 @@ def _try_price_answer(user_text: str):
 def listings_view(request):
     if request.method == "GET":
         try:
-            # Check if status field exists
-            from django.db import connection
-            with connection.cursor() as cursor:
-                cursor.execute("PRAGMA table_info(core_listing)")
-                columns = [row[1] for row in cursor.fetchall()]
-                
-            if 'status' in columns:
-                # Status field exists, try to get approved listings first
-                approved_qs = Listing.objects.filter(status="approved")
-                if approved_qs.exists():
-                    qs = approved_qs
-                else:
-                    # No approved listings, show all for development
-                    # This helps during development when listings might be pending
-                    qs = Listing.objects.all()
-                    # Auto-approve all listings for development
-                    Listing.objects.filter(status__in=['pending', '']).update(status='approved')
-            else:
-                # Status field doesn't exist yet, show all listings
-                qs = Listing.objects.all()
-                
+            qs = Listing.objects.filter(status="approved")
         except Exception as e:
-            # Fallback: show all listings if there's any error
-            qs = Listing.objects.all()
-            
+            # Graceful fallback, but don't expose unapproved cars
+            qs = Listing.objects.none()
         serializer = ListingSerializer(qs, many=True)
         # Optional: log view activity for authenticated users
         if request.user.is_authenticated:
@@ -920,13 +899,11 @@ def listings_view(request):
 def listing_detail_view(request, listing_id):
     """Get detailed information for a specific car listing"""
     try:
-        # Try to get approved listing first
-        try:
-            listing = Listing.objects.get(id=listing_id, status="approved")
-        except Exception:
-            # Fallback: get any listing if status field doesn't exist
-            listing = Listing.objects.get(id=listing_id)
+        listing = Listing.objects.get(id=listing_id, status="approved")
     except Listing.DoesNotExist:
+        return Response({"detail": "Listing not found"}, status=status.HTTP_404_NOT_FOUND)
+    except Exception:
+        # Handle exceptions gracefully
         return Response({"detail": "Listing not found"}, status=status.HTTP_404_NOT_FOUND)
     
     # Get seller profile information
@@ -970,13 +947,8 @@ def listing_detail_view(request, listing_id):
             ).exclude(id__in=[r['id'] for r in related_listings])[:3-len(related_listings)]
             related_listings.extend(ListingSerializer(similar_price, many=True).data)
     except Exception:
-        # Fallback for when status field doesn't exist
-        try:
-            related_qs = Listing.objects.exclude(id=listing_id)
-            same_make = related_qs.filter(make__iexact=listing.make)[:3]
-            related_listings.extend(ListingSerializer(same_make, many=True).data)
-        except Exception:
-            pass
+        # Fallback for when errors happen, we just return empty related listings rather than returning unapproved ones
+        pass
     
     # Log view activity for authenticated users
     if request.user.is_authenticated:
