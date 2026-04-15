@@ -1,6 +1,6 @@
  var API_BASE = window.API_BASE || '/api';
-    let cartData = null;
-    let selectedPaymentMethod = 'cod';
+    var cartData = null;
+    var selectedPaymentMethod = 'cod';
     
     // Load cart data and populate order summary
     async function loadCart() {
