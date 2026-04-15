@@ -1,4 +1,4 @@
- const API_BASE = '/api';
+ var API_BASE = window.API_BASE || '/api';
     let cartData = null;
     let selectedPaymentMethod = 'cod';
     
@@ -188,8 +188,15 @@
         console.log('Response status:', response.status);
         console.log('Response headers:', response.headers);
         
-        const responseData = await response.json();
-        console.log('Server response:', responseData);
+        let responseData;
+        const responseText = await response.text();
+        try {
+          responseData = JSON.parse(responseText);
+          console.log('Server response:', responseData);
+        } catch (e) {
+          console.error('Failed to parse response as JSON. Raw response:', responseText);
+          throw new Error(`Server returned an invalid response (Status ${response.status}). Check server logs.`);
+        }
         
         if (!response.ok) {
           throw new Error(responseData.detail || responseData.message || 'Failed to create order');

@@ -1957,8 +1957,9 @@ def create_order(request):
         print(f"Order creation error: {error_details}")  # Log to console
         return Response({
             "detail": f"Failed to create order: {str(e)}",
-            "error_type": type(e).__name__
-        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            "error_type": type(e).__name__,
+            "traceback": error_details
+        }, status=status.HTTP_400_BAD_REQUEST)
 
 
 # Cart Endpoints
